@@ -169,12 +169,7 @@
     <main>
       <!-- Hero Section -->
       <section class="relative h-screen flex items-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-          <img
-            class="w-full h-full object-cover grayscale-[20%] brightness-90"
-            data-alt="The grand architectural facade of Palazzo Madama in Turin, Italy. The limestone building shows large arched windows, Corinthian columns, and a balustrade adorned with statues. In front stands the Monument to the Alfiere dell'Esercito Sardo in the center of the paved square."
-            src="../assets/hero.webp"
-          />
+        <div class="absolute inset-0 z-0" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../assets/hero.webp'); background-size: cover; background-position: center;" data-alt="The grand architectural facade of Palazzo Madama in Turin, Italy. The limestone building shows large arched windows, Corinthian columns, and a balustrade adorned with statues. In front stands the Monument to the Alfiere dell'Esercito Sardo in the center of the paved square.">
         </div>
         <div class="relative z-10 px-margin-safe max-w-[1440px] mx-auto w-full">
           <div class="max-w-3xl">
@@ -250,9 +245,9 @@
         </div>
       </section>
       <!-- Amenities (Bento Style) -->
-      <section class="py-section-padding bg-stone-50 overflow-hidden">
+      <section class="py-section-padding bg-stone-50 overflow-x-hidden">
         <div class="px-margin-safe max-w-[1440px] mx-auto">
-          <div class="grid grid-cols-12 gap-8">
+          <div class="grid grid-cols-12 md:gap-8">
             <div
               class="col-span-12 lg:col-span-4 flex flex-col justify-center pr-12"
             >
@@ -304,7 +299,7 @@
             </div>
             <div class="col-span-12 lg:col-span-8 grid md:grid-cols-2 gap-8">
               <div
-                class="bg-white p-12 flex flex-col justify-between aspect-square lg:aspect-auto"
+                class="bg-white p-6 md:p-12 box-border flex flex-col justify-between aspect-square lg:aspect-auto min-w-0 mt-8"
               >
                 <span
                   class="material-symbols-outlined text-4xl text-primary mb-12"
@@ -321,7 +316,7 @@
                 class="relative overflow-hidden aspect-square"
               >
                 <img
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover block"
                   data-alt="A beautiful bouquet of white lilies, amaryllis, and green hydrangeas in a fluted glass vase, placed on a marble windowsill. In the background, typical Italian city buildings with shutters are visible through the window. The scene includes festive gold decorations, a gold candle, and a decorative gold bowl."
                   src="../assets/flowers.webp"
                 />
@@ -330,13 +325,13 @@
                 class="relative overflow-hidden aspect-square"
               >
                 <img
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover block"
                   data-alt="A clean, modern minimalist kitchen with white handleless cabinets and a marble-effect countertop. The kitchen is equipped with a built-in oven, an induction cooktop, a stainless steel sink, and a coffee machine. A vibrant red rug with a white polka-dot pattern adds a pop of color to the light wood floor."
                   src="../assets/kitchen.webp"
                 />
               </div>
               <div
-                class="bg-stone-900 p-12 text-white flex flex-col justify-between aspect-square lg:aspect-auto"
+                class="bg-stone-900 p-6 md:p-12 box-border text-white flex flex-col justify-between aspect-square lg:aspect-auto min-w-0"
               >
                 <span
                   class="material-symbols-outlined text-4xl text-amber-500 mb-12"

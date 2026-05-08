@@ -169,12 +169,7 @@
     <main>
       <!-- Hero Section -->
       <section class="relative h-screen flex items-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-          <img
-            class="w-full h-full object-cover grayscale-[20%] brightness-90"
-            data-alt="La maestosa facciata architettonica di Palazzo Madama a Torino, in Italia. L'edificio in pietra calcarea presenta grandi finestre ad arco, colonne corinzie e una balaustra adornata da statue. Di fronte, al centro della piazza lastricata, si erge il Monumento all'Alfiere dell'Esercito Sardo."
-            src="../assets/hero.webp"
-          />
+        <div class="absolute inset-0 z-0" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../assets/hero.webp'); background-size: cover; background-position: center;" data-alt="La maestosa facciata architettonica di Palazzo Madama a Torino, in Italia. L'edificio in pietra calcarea presenta grandi finestre ad arco, colonne corinzie e una balaustra adornata da statue. Di fronte, al centro della piazza lastricata, si erge il Monumento all'Alfiere dell'Esercito Sardo.">
         </div>
         <div class="relative z-10 px-margin-safe max-w-[1440px] mx-auto w-full">
           <div class="max-w-3xl">
@@ -249,9 +244,9 @@
         </div>
       </section>
       <!-- Amenities (Bento Style) -->
-      <section class="py-section-padding bg-stone-50 overflow-hidden">
+      <section class="py-section-padding bg-stone-50 overflow-x-hidden">
         <div class="px-margin-safe max-w-[1440px] mx-auto">
-          <div class="grid grid-cols-12 gap-8">
+          <div class="grid grid-cols-12 md:gap-8">
             <div
               class="col-span-12 lg:col-span-4 flex flex-col justify-center pr-12"
             >
@@ -303,7 +298,7 @@
             </div>
             <div class="col-span-12 lg:col-span-8 grid md:grid-cols-2 gap-8">
               <div
-                class="bg-white p-12 flex flex-col justify-between aspect-square lg:aspect-auto"
+                class="bg-white p-6 md:p-12 box-border flex flex-col justify-between aspect-square lg:aspect-auto min-w-0 mt-8"
               >
                 <span
                   class="material-symbols-outlined text-4xl text-primary mb-12"
@@ -320,7 +315,7 @@
                 class="relative overflow-hidden aspect-square"
               >
                 <img
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover block"
                   data-alt="Un bellissimo bouquet di gigli bianchi, amarilli e ortensie verdi in un vaso di vetro scanalato, appoggiato sul davanzale di una finestra in marmo. Sullo sfondo, attraverso la finestra, si intravedono gli edifici tipici di una città italiana con le persiane. La scena è impreziosita da decorazioni dorate, una candela dorata e una ciotola decorativa dorata."
                   src="../assets/flowers.webp"
                 />
@@ -329,13 +324,13 @@
                 class="relative overflow-hidden aspect-square"
               >
                 <img
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover block"
                   data-alt="Una cucina pulita, moderna e minimalista, con mobili bianchi senza maniglie e un piano di lavoro effetto marmo. La cucina è dotata di forno da incasso, piano cottura a induzione, lavello in acciaio inossidabile e macchina per il caffè. Un tappeto rosso vivace con un motivo a pois bianchi aggiunge un tocco di colore al pavimento in legno chiaro."
                   src="../assets/kitchen.webp"
                 />
               </div>
               <div
-                class="bg-stone-900 p-12 text-white flex flex-col justify-between aspect-square lg:aspect-auto"
+                class="bg-stone-900 p-6 md:p-12 box-border text-white flex flex-col justify-between aspect-square lg:aspect-auto min-w-0"
               >
                 <span
                   class="material-symbols-outlined text-4xl text-amber-500 mb-12"
