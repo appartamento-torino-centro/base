@@ -5,6 +5,11 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Appartamento Torino Centro</title>
+    <link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/site.webmanifest" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;600&amp;display=swap"
@@ -77,7 +82,7 @@
               "surface-container-highest": "#e5e2e1",
               outline: "#7f7667",
               background: "#fcf9f8",
-              primary: "#775a19",
+              primary: "#b9925e",
               "on-background": "#1c1b1b",
               "on-primary": "#ffffff",
               "tertiary-fixed-dim": "#e9c349",
@@ -153,8 +158,9 @@
         class="flex md:flex-row flex-col justify-between items-start md:items-center w-full px-16 py-6 max-w-[1440px] mx-auto"
       >
         <div
-          class="text-2xl font-serif tracking-[0.2em] uppercase text-stone-900"
+          class="text-2xl font-serif tracking-[0.2em] uppercase text-stone-900 flex gap-3 items-center"
         >
+          <img src="../assets/Logo.svg" class="w-10"/>
           APPARTAMENTO TORINO CENTRO
         </div>
         <a href="https://wa.me/+393356110429?text=" target="_blank">
@@ -173,8 +179,8 @@
           class="absolute inset-0 z-0"
           style="
             background:
-              linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-              url(&quot;../assets/hero.webp&quot;);
+              linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+              url('../assets/hero.webp');
             background-size: cover;
             background-position: center;
           "
@@ -198,164 +204,12 @@
           </div>
         </div>
       </section>
-      <!-- Featured Apartments -->
-      <section class="py-section-padding px-margin-safe max-w-[1440px] mx-auto">
-        <div class="flex justify-between items-end mb-16">
-          <div class="max-w-xl">
-            <h2 class="font-headline-lg text-stone-900 mb-4">
-              Residenza di pregio
-            </h2>
-            <p class="font-body-lg text-stone-500 italic">
-              L'appartamento è un dialogo tra la tradizione piemontese e il
-              design contemporaneo.
-            </p>
-          </div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <!-- Suite 1 -->
-          <div class="group">
-            <div class="aspect-[3/4] overflow-hidden mb-6 relative">
-              <img
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="Un accogliente salotto arredato con un divano bianco ricoperto da un morbido plaid in pelliccia sintetica beige e bianca. Sul divano sono appoggiati due cuscini decorativi: uno nero con un elefante ricamato in oro e un altro ricoperto di scintillanti paillettes dorate. Sulla parete bianca sopra il divano è appesa una grande cornice dorata decorata, ma vuota. A sinistra si trovano un piccolo sgabello in velluto giallo e un quadro raffigurante un soggetto botanico, mentre a destra spicca una lampada da terra bianca."
-                src="../assets/pic1.webp"
-              />
-              <div
-                class="absolute inset-0 border-[0px] group-hover:border-[1px] border-primary transition-all duration-300 pointer-events-none"
-              ></div>
-            </div>
-          </div>
-          <!-- Suite 2 -->
-          <div class="group md:mt-24">
-            <div class="aspect-[3/4] overflow-hidden mb-6 relative">
-              <img
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="Una consolle in legno scuro in stile orientale con finiture dorate circolari, incorniciata da tende bianche trasparenti. Sul tavolo si trovano una candela a colonna dorata alta, inserita in un portacandela a piedistallo in vetro trasparente, una scatola decorativa per fazzoletti e una ciotola dorata con motivi floreali traforati. La scena è incorniciata ai lati da pesanti tendaggi verde oliva."
-                src="../assets/pic2.webp"
-              />
-              <div
-                class="absolute inset-0 border-[0px] group-hover:border-[1px] border-primary transition-all duration-300 pointer-events-none"
-              ></div>
-            </div>
-          </div>
-          <!-- Suite 3 -->
-          <div class="group">
-            <div class="aspect-[3/4] overflow-hidden mb-6 relative">
-              <img
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="Una raffinata veduta degli interni in cui spicca una mensola decorativa bianca, ricavata dalla cornice di un camino, utilizzata come ripiano. Sulla mensola sono collocati un classico busto bianco e una ciotola di cristallo. All'interno della cavità del camino si trovano diverse grandi candele bianche a colonna e un vaso orientale scuro. La parete sovrastante è decorata con una serie di foto in bianco e nero incorniciate raffiguranti animali selvatici e scene naturali. In primo piano si intravedono una poltrona nera e un divano bianco, impreziositi da cuscini con una aragosta ricamata di paillettes e un leopardo dorato."
-                src="../assets/pic3.webp"
-              />
-              <div
-                class="absolute inset-0 border-[0px] group-hover:border-[1px] border-primary transition-all duration-300 pointer-events-none"
-              ></div>
-            </div>
-          </div>
-        </div>
+      
+      <!-- Features -->
+      <section>
+
       </section>
-      <!-- Amenities (Bento Style) -->
-      <section class="py-section-padding bg-stone-50 overflow-x-hidden">
-        <div class="px-margin-safe max-w-[1440px] mx-auto">
-          <div class="grid grid-cols-12 md:gap-8">
-            <div
-              class="col-span-12 lg:col-span-4 flex flex-col justify-center pr-12"
-            >
-              <h2 class="font-headline-lg text-stone-900 mb-6 leading-tight">
-                Servizi Raffinati per il Viaggiatore Moderno
-              </h2>
-              <p class="font-body-lg text-stone-500 mb-8">
-                Non offriamo solo una appartamento, ma un ambiente curato
-                pensato sia per la produttività che per il relax.
-              </p>
-              <div class="flex flex-col gap-4">
-                <div
-                  class="flex items-center gap-4 py-4 border-b border-stone-200"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary"
-                    data-weight="fill"
-                    >wifi</span
-                  >
-                  <span class="font-label-sm uppercase tracking-widest"
-                    >WiFi gratuito</span
-                  >
-                </div>
-                <div
-                  class="flex items-center gap-4 py-4 border-b border-stone-200"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary"
-                    data-weight="fill"
-                    >ac_unit</span
-                  >
-                  <span class="font-label-sm uppercase tracking-widest"
-                    >Controllo Climatizzazione</span
-                  >
-                </div>
-                <div
-                  class="flex items-center gap-4 py-4 border-b border-stone-200"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary"
-                    data-weight="fill"
-                    >location_on</span
-                  >
-                  <span class="font-label-sm uppercase tracking-widest"
-                    >Zona Centrale</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-span-12 lg:col-span-8 grid md:grid-cols-2 gap-8">
-              <div
-                class="bg-white p-6 md:p-12 box-border flex flex-col justify-between aspect-square lg:aspect-auto min-w-0 mt-8 md:mt-0"
-              >
-                <span
-                  class="material-symbols-outlined text-4xl text-primary mb-12"
-                  >coffee</span
-                >
-                <div>
-                  <h4 class="font-headline-md mb-2">Café in Appartmento</h4>
-                  <p class="font-body-md text-stone-500">
-                    Il piacere raffinato di una bevanda versata alla perfezione,
-                    pensata appositamente per il tuo rituale mattutino.
-                  </p>
-                </div>
-              </div>
-              <div class="relative overflow-hidden aspect-square">
-                <img
-                  class="w-full h-full object-cover block"
-                  data-alt="Un bellissimo bouquet di gigli bianchi, amarilli e ortensie verdi in un vaso di vetro scanalato, appoggiato sul davanzale di una finestra in marmo. Sullo sfondo, attraverso la finestra, si intravedono gli edifici tipici di una città italiana con le persiane. La scena è impreziosita da decorazioni dorate, una candela dorata e una ciotola decorativa dorata."
-                  src="../assets/flowers.webp"
-                />
-              </div>
-              <div class="relative overflow-hidden aspect-square">
-                <img
-                  class="w-full h-full object-cover block"
-                  data-alt="Una cucina pulita, moderna e minimalista, con mobili bianchi senza maniglie e un piano di lavoro effetto marmo. La cucina è dotata di forno da incasso, piano cottura a induzione, lavello in acciaio inossidabile e macchina per il caffè. Un tappeto rosso vivace con un motivo a pois bianchi aggiunge un tocco di colore al pavimento in legno chiaro."
-                  src="../assets/kitchen.webp"
-                />
-              </div>
-              <div
-                class="bg-stone-900 p-6 md:p-12 box-border text-white flex flex-col justify-between aspect-square lg:aspect-auto min-w-0"
-              >
-                <span
-                  class="material-symbols-outlined text-4xl text-amber-500 mb-12"
-                  >kitchen</span
-                >
-                <div>
-                  <h4 class="font-headline-md mb-2">Cucina Moderna</h4>
-                  <p class="font-body-md text-stone-400">
-                    Completamente attrezzata con elettrodomestici di alta gamma
-                    e tutto il necessario per una piacevole esperienza in
-                    cucina.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <!-- Testimonials -->
       <section
         class="py-section-padding px-margin-safe max-w-[1440px] mx-auto text-center"
@@ -473,40 +327,6 @@
           </div>
         </div>
       </section>
-      <!-- Instagram Gallery -->
-      <section class="py-section-padding px-margin-safe max-w-[1440px] mx-auto">
-        <div class="text-center mb-16">
-          <h2 class="font-headline-md text-stone-900 mb-4">
-            La Lente dell'Appartamento
-          </h2>
-          <p class="font-label-sm uppercase tracking-[0.2em] text-primary">
-            #TURINATELIERLUX
-          </p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div class="aspect-square overflow-hidden">
-            <img
-              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-              data-alt="Un elegante soggiorno con un grande televisore a schermo piatto appeso alla parete sopra una collezione di libri e riviste. Sulla destra si trova una mensola decorativa bianca con candele e una poltrona nera. La parete è impreziosita da una serie di ritratti di animali in bianco e nero, mentre il pavimento è ricoperto da un soffice tappeto grigio."
-              src="../assets/ig1.webp"
-            />
-          </div>
-          <div class="aspect-square overflow-hidden mt-8 md:mt-12">
-            <img
-              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-              data-alt="Un bagno moderno con rivestimenti in marmo bianco e pavimento a motivi geometrici. È dotato di un lavabo sospeso bianco, uno specchio rotondo e un'applique classica. Due ampie finestre con tende bianche che garantiscono la privacy lasciano entrare una luce soffusa, mentre sul davanzale è appoggiata una scultura decorativa a forma di mano color oro."
-              src="../assets/ig2.webp"
-            />
-          </div>
-          <div class="aspect-square overflow-hidden">
-            <img
-              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-              data-alt="Primo piano di una cassettiera vintage in legno, con un'elegante finitura lucida e maniglie decorate in metallo scuro. Sullo sfondo sfocato, una grande fotografia in bianco e nero incorniciata, raffigurante una stradina europea, è appoggiata a una parete bianca su un pavimento in legno chiaro."
-              src="../assets/ig3.webp"
-            />
-          </div>
-        </div>
-      </section>
     </main>
     <!-- Footer -->
     <footer
@@ -519,6 +339,7 @@
         © 2026 APPARTAMENTO TORINO CENTRO Lux B&amp;B. Designed for the
         discerning traveler.
       </p>
+      <p class="font-serif text-stone-600 max-w-md">P.IVA 11556040019</p>
     </footer>
   </body>
 </html>
