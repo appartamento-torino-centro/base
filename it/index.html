@@ -1,385 +1,452 @@
 <!doctype html>
 
-<html class="light" lang="en">
+<html lang="it">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Appartamento Torino Centro</title>
-    <link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
-    <link rel="shortcut icon" href="../assets/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
-    <link rel="manifest" href="../assets/site.webmanifest" />
+    <title>Appartamento Torino Centro - Luxury Stay</title>
+    <!-- Google Fonts for Luxury Serif feel -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@300;400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;600&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-          "FILL" 0,
-          "wght" 300,
-          "GRAD" 0,
-          "opsz" 24;
-      }
-      body {
-        scroll-behavior: smooth;
-      }
-      .editorial-grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 32px;
-      }
-    </style>
-    <script id="tailwind-config">
+    <script>
       tailwind.config = {
-        darkMode: "class",
         theme: {
           extend: {
             colors: {
-              error: "#ba1a1a",
-              "inverse-primary": "#e9c176",
-              "on-primary-container": "#4e3700",
-              "surface-bright": "#fcf9f8",
-              "on-secondary": "#ffffff",
-              "on-error-container": "#93000a",
-              "on-secondary-fixed-variant": "#733521",
-              "on-secondary-container": "#783924",
-              "on-surface": "#1c1b1b",
-              tertiary: "#735c00",
-              "on-primary-fixed": "#261900",
-              "primary-fixed": "#ffdea5",
-              "on-tertiary-container": "#493900",
-              "secondary-fixed-dim": "#ffb59e",
-              surface: "#fcf9f8",
-              "surface-container": "#f0eded",
-              "outline-variant": "#d1c5b4",
-              "on-tertiary": "#ffffff",
-              "on-surface-variant": "#4e4639",
-              "secondary-fixed": "#ffdbd0",
-              "error-container": "#ffdad6",
-              "surface-container-high": "#eae7e7",
-              "secondary-container": "#fea58a",
-              "surface-variant": "#e5e2e1",
-              "surface-dim": "#dcd9d9",
-              secondary: "#904b36",
-              "surface-container-low": "#f6f3f2",
-              "tertiary-container": "#c5a129",
-              "surface-tint": "#775a19",
-              "on-tertiary-fixed": "#241a00",
-              "on-error": "#ffffff",
-              "surface-container-lowest": "#ffffff",
-              "on-tertiary-fixed-variant": "#574500",
-              "surface-container-highest": "#e5e2e1",
-              outline: "#7f7667",
-              background: "#fcf9f8",
-              primary: "#b9925e",
-              "on-background": "#1c1b1b",
-              "on-primary": "#ffffff",
-              "tertiary-fixed-dim": "#e9c349",
-              "tertiary-fixed": "#ffe088",
-              "primary-container": "#c5a059",
-              "inverse-on-surface": "#f3f0ef",
-              "primary-fixed-dim": "#e9c176",
-              "inverse-surface": "#313030",
-              "on-secondary-fixed": "#3a0b00",
-              "on-primary-fixed-variant": "#5d4201",
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
-            spacing: {
-              "container-max": "1280px",
-              "margin-safe": "64px",
-              "section-padding": "120px",
-              gutter: "32px",
-              unit: "8px",
+              "gold-light": "#c5a059",
+              "gold-dark": "#a38146",
+              "luxury-beige": "#f9f6f1",
+              "luxury-charcoal": "#2d2d2d",
             },
             fontFamily: {
-              "headline-md": ["Noto Serif"],
-              "label-sm": ["Plus Jakarta Sans"],
-              "display-xl": ["Noto Serif"],
-              "headline-lg": ["Noto Serif"],
-              "body-md": ["Plus Jakarta Sans"],
-              "body-lg": ["Plus Jakarta Sans"],
-            },
-            fontSize: {
-              "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "400" }],
-              "label-sm": [
-                "12px",
-                {
-                  lineHeight: "1.2",
-                  letterSpacing: "0.1em",
-                  fontWeight: "600",
-                },
-              ],
-              "display-xl": [
-                "72px",
-                {
-                  lineHeight: "1.1",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "400",
-                },
-              ],
-              "headline-lg": ["48px", { lineHeight: "1.2", fontWeight: "400" }],
-              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
-              "body-lg": [
-                "18px",
-                {
-                  lineHeight: "1.8",
-                  letterSpacing: "0.01em",
-                  fontWeight: "300",
-                },
-              ],
+              serif: ["Playfair Display", "serif"],
+              sans: ["Montserrat", "sans-serif"],
             },
           },
         },
       };
     </script>
+    <style data-purpose="custom-typography">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #ffffff;
+        color: #2d2d2d;
+      }
+      h1,
+      h2,
+      h3,
+      .serif-font {
+        font-family: "Playfair Display", serif;
+      }
+      .letter-spacing-wide {
+        letter-spacing: 0.15em;
+      }
+    </style>
+    <style data-purpose="layout-refinements">
+      .hero-overlay {
+        background: rgba(0, 0, 0, 0.2);
+      }
+      .border-gold {
+        border-color: #c5a059;
+      }
+      .text-gold {
+        color: #c5a059;
+      }
+      .bg-luxury-beige {
+        background-color: #f9f6f1;
+      }
+    </style>
   </head>
-  <body class="bg-background text-on-background font-body-md">
-    <!-- TopAppBar -->
+  <body class="antialiased">
+    <!-- BEGIN: MainHeader -->
     <header
-      class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-stone-100"
+      class="bg-white/95 sticky top-0 z-50 border-b border-gray-100 px-6 py-4"
     >
-      <nav
-        class="flex md:flex-row flex-col justify-between items-start md:items-center w-full px-16 py-6 max-w-[1440px] mx-auto"
-      >
-        <div
-          class="text-2xl font-serif tracking-[0.2em] uppercase text-stone-900 flex gap-3 items-center"
-        >
-          <img src="../assets/Logo.svg" class="w-10"/>
-          APPARTAMENTO TORINO CENTRO
-        </div>
-        <a href="https://wa.me/+393356110429?text=" target="_blank">
-          <button
-            class="bg-primary text-on-primary px-8 py-3 font-label-sm uppercase tracking-widest hover:opacity-80 transition-all active:scale-95"
-          >
-            Prenota Ora
-          </button>
-        </a>
-      </nav>
-    </header>
-    <main>
-      <!-- Hero Section -->
-      <section class="relative h-screen flex items-center overflow-hidden">
-        <div
-          class="absolute inset-0 z-0"
-          style="
-            background:
-              linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-              url('../assets/hero.webp');
-            background-size: cover;
-            background-position: center;
-          "
-          data-alt="La maestosa facciata architettonica di Palazzo Madama a Torino, in Italia. L'edificio in pietra calcarea presenta grandi finestre ad arco, colonne corinzie e una balaustra adornata da statue. Di fronte, al centro della piazza lastricata, si erge il Monumento all'Alfiere dell'Esercito Sardo."
-        ></div>
-        <div class="relative z-10 px-margin-safe max-w-[1440px] mx-auto w-full">
-          <div class="max-w-3xl">
-            <span
-              class="font-label-sm uppercase tracking-[0.3em] text-on-primary mb-6 block"
-              >Dal 2021 — Torino, Italia</span
-            >
-            <h1 class="font-display-xl text-white mb-12">
-              Scopri lo stile di vita di lusso a Torino
-            </h1>
-            <div class="flex items-center gap-6">
-              <div class="h-[1px] w-24 bg-white/50"></div>
-              <p class="text-white/80 font-body-lg italic">
-                Un rifugio architettonico per l'intenditore moderno.
-              </p>
-            </div>
+      <div class="w-full flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2" data-purpose="site-logo">
+          <div class="w-10 h-10 flex items-center justify-center">
+            <img
+              alt="Logo"
+              class="w-6 h-6 text-gold-light font-serif italic"
+              src="../assets/logo.svg"
+            />
+          </div>
+          <div class="leading-none">
+            <p class="text-xs tracking-[0.3em] font-medium uppercase">
+              Appartamento
+            </p>
+            <p class="text-xs tracking-[0.3em] text-gray-400 uppercase">
+              Torino Centro
+            </p>
           </div>
         </div>
-      </section>
-      
-      <!-- Features -->
-      <section class="bg-[#f0ebe5] flex flex-row justify-around w-full py-8 px-margin-safe">
-        <div class="flex flex-col items-center">
-          <span class="material-symbols-outlined text-primary text-6xl mb-12"
-            >home</span
+        <!-- Navigation - Links Removed per request -->
+        <nav class="hidden lg:flex items-center space-x-8"></nav>
+        <!-- CTA -->
+        <div>
+          <a
+            href="https://wa.me/393356110429?text="
+            target="_blank"
+            rel="noopener noreferrer"
           >
-          <p class="font-body-lg text-stone-800 mb-4 text-2xl uppercase text-center">Posizione centrale</p>
-          <p class="font-body-md text-stone-500 w-48 text-center">
-            A pochi passi dalle meraviglie di Torino
-          </p>
-        </div>
-        
-        <div class="flex flex-col items-center">
-          <span class="material-symbols-outlined text-primary text-6xl mb-12"
-          >bed</span
-          >
-          <p class="font-body-lg text-stone-800 mb-4 text-2xl uppercase text-center">Design e Comfort</p>
-          <p class="font-body-md text-stone-500 w-48 text-center">
-            Ambienti raffinati, curati in ogni dettaglio
-          </p>
-        </div>
-  
-
-        <div class="flex flex-col items-center">
-          <span class="material-symbols-outlined text-primary text-6xl mb-12"
-            >partner_heart</span
-          >
-          <p class="font-body-lg text-stone-800 mb-4 text-2xl uppercase text-center">Per coppie</p>
-          <p class="font-body-md text-stone-500 w-48 text-center">
-            L'atmosfera perfetta per momenti speciali
-          </p>
-        </div>
-      </section>
-
-      <!-- Testimonials -->
-      <section
-        class="py-section-padding px-margin-safe max-w-[1440px] mx-auto text-center"
-      >
-        <span class="material-symbols-outlined text-primary text-6xl mb-12"
-          >format_quote</span
-        >
-        <div class="max-w-4xl mx-auto">
-          <p class="font-headline-lg italic text-stone-800 mb-12">
-            "Appartamento molto accogliente, arredato con gusto, pulito e
-            confortevole. Spazi giusti per 4 persone. La proprietaria ha fornito
-            tutte le indicazioni per l'accesso e risposto celermente alle ns.
-            richieste. La struttura si trova vicino alla stazione centrale a
-            pochi passi dal centro."
-          </p>
-          <div class="flex flex-col items-center">
-            <span
-              class="font-label-sm uppercase tracking-[0.2em] text-stone-900"
-              >Maria — Italia</span
+            <button
+              class="px-6 py-2 border border-gold-light text-[10px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition duration-300"
             >
-            <div class="flex gap-1 mt-4">
-              <span
-                class="material-symbols-outlined text-primary text-sm"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >star</span
-              >
-              <span
-                class="material-symbols-outlined text-primary text-sm"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >star</span
-              >
-              <span
-                class="material-symbols-outlined text-primary text-sm"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >star</span
-              >
-              <span
-                class="material-symbols-outlined text-primary text-sm"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >star</span
-              >
-              <span
-                class="material-symbols-outlined text-primary text-sm"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >star</span
-              >
-            </div>
-          </div>
+              Prenota Ora
+            </button>
+          </a>
         </div>
-      </section>
-
-      <!-- Welcome @@@@@WIP@@@@@ -->
-      <section class="bg-[#f0ebe5] flex flex-row justify-between w-full">
-        <div class="px-margin-safe py-8">
-          <p>Benvenuti</p>
-          <p>Eleganza, Storia e Autenticità</p>
-          <p>Nel cuore pulsante di Torino, un appartamento esclusivo dove il fascino della storia incontra il comfort moderno. Ogni dettaglio è pensato per farti vivere un soggiorno indimenticabile.</p>
-        </div>
-        <img src="../assets/pic.webp" class="w-1/2 object-cover"/>
-      </section>
-
-      <!-- Location & Map -->
-      <section class="py-section-padding border-t border-stone-100">
-        <div class="px-margin-safe max-w-[1440px] mx-auto">
-          <div class="flex flex-col md:flex-row gap-16 items-center">
-            <div class="flex-1">
-              <h2 class="font-headline-lg text-stone-900 mb-8">
-                Nel cuore del Quadrilatero
-              </h2>
-              <p class="font-body-lg text-stone-500 mb-12">
-                Situato tra il Museo Egizio e il Palazzo Reale, il nostro
-                appartamento vanta la posizione più prestigiosa della città.
-                Scoprite il ritmo pulsante di Torino da un rifugio tranquillo,
-                circondato da strade acciottolate.
-              </p>
-              <div class="space-y-6">
-                <div class="flex items-start gap-4">
-                  <span class="material-symbols-outlined text-primary"
-                    >distance</span
-                  >
-                  <div>
-                    <h5 class="font-label-sm uppercase mb-1">Museo Egizio</h5>
-                    <p class="text-stone-400 font-body-md italic">
-                      10 minuti a piedi
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-4">
-                  <span class="material-symbols-outlined text-primary"
-                    >distance</span
-                  >
-                  <div>
-                    <h5 class="font-label-sm uppercase mb-1">
-                      Mole Antonelliana
-                    </h5>
-                    <p class="text-stone-400 font-body-md italic">
-                      12 minuti a piedi
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex-1 w-full aspect-video md:aspect-[4/5] bg-stone-100 grayscale hover:grayscale-0 transition-all duration-700 relative group overflow-hidden"
-            >
-              <img
-                class="w-full h-full object-cover"
-                data-alt="Una mappa sovrapposta, dettagliata ed elegante, che raffigura il quartiere centrale del Quadrilatero di Torino. La mappa presenta uno stile minimalista e raffinato, caratterizzato da una palette di colori tenui, tra cui il crema e il grigio chiaro, con sottili linee dorate che delineano le strade. La posizione di 'APPARTAMENTO TORINO CENTRO' è contrassegnata da una piccola e raffinata icona color rame. L'illuminazione della texture di fondo evoca una pergamena di alta qualità."
-                data-location="Torino, Italia"
-                src="../assets/map.webp"
-              />
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div
-                  class="bg-white/90 backdrop-blur-md px-8 py-6 shadow-xl border border-stone-200 text-center"
-                >
-                  <span
-                    class="font-label-sm uppercase tracking-widest text-primary mb-2 block"
-                    >La Nostra Posizione</span
-                  >
-                  <p class="font-headline-md text-stone-900">
-                    Via Paolo Sacchi, 36
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer
-      class="w-full px-16 py-24 flex flex-col items-center gap-12 text-center bg-stone-50 border-t border-stone-200 mt-32"
-    >
-      <div class="text-xl font-serif tracking-widest text-stone-900">
-        APPARTAMENTO TORINO CENTRO
       </div>
-      <p class="font-serif text-stone-600 max-w-md">
-        © 2026 APPARTAMENTO TORINO CENTRO Lux B&amp;B. Designed for the
-        discerning traveler.
-      </p>
-      <p class="font-serif text-stone-600 max-w-md">P.IVA 11556040019</p>
+    </header>
+    <!-- END: MainHeader -->
+    <!-- BEGIN: HeroSection -->
+    <section class="relative h-[85vh] overflow-hidden">
+      <!-- Hero Image Background -->
+      <div class="absolute inset-0">
+        <img
+          alt="Luxury Living Room"
+          class="w-full h-full object-cover"
+          src="../assets/hero.webp"
+        />
+        <div class="absolute inset-0 hero-overlay"></div>
+      </div>
+      <!-- Hero Content -->
+      <div class="relative container mx-auto h-full flex items-center px-6">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-5xl md:text-6xl font-serif mb-4 leading-tight">
+            VIVI TORINO,<br />SENTITI A CASA.
+          </h1>
+          <div class="w-12 h-[1px] bg-gold-light mb-6"></div>
+          <p class="text-lg md:text-xl font-light italic mb-8 opacity-90">
+            Un rifugio elegante e romantico nel cuore della città.
+          </p>
+          <a href="#features">
+            <button
+              class="px-8 py-3 border border-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-luxury-charcoal transition-all duration-300"
+            >
+              Scopri di più
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- UI Overlays removed per request -->
+    </section>
+    <!-- END: HeroSection -->
+
+    <!-- BEGIN: FeaturesSection -->
+    <section class="py-24 px-6">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <!-- Feature 1 -->
+        <div class="text-center group">
+          <div class="mb-6 flex justify-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center transition duration-500"
+            >
+              <svg
+                width="24"
+                height="24"
+                class="w-32 h-32 text-gold-light"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 11.5689C3 10.6296 3 10.16 3.12945 9.73377C3.24406 9.3564 3.43194 9.00534 3.68236 8.70065C3.96523 8.35649 4.35597 8.096 5.13744 7.57502L9.33744 4.77502C10.2997 4.1335 10.7808 3.81275 11.3009 3.68813C11.7605 3.578 12.2395 3.578 12.6991 3.68813C13.2192 3.81275 13.7003 4.1335 14.6626 4.77502L18.8626 7.57502C19.644 8.096 20.0348 8.35649 20.3176 8.70065C20.5681 9.00534 20.7559 9.3564 20.8705 9.73377C21 10.16 21 10.6296 21 11.5689V16.2C21 17.8801 21 18.7202 20.673 19.3619C20.3854 19.9264 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9264 3.32698 19.3619C3 18.7202 3 17.8801 3 16.2V11.5689Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M9 15C9 13.3431 10.3431 12 12 12C13.6569 12 15 13.3431 15 15V21H9V15Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
+            Posizione Centrale
+          </h3>
+          <p
+            class="text-[11px] text-gray-500 leading-relaxed uppercase tracking-wider"
+          >
+            A pochi passi dalle meraviglie di Torino.
+          </p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="text-center group">
+          <div class="mb-6 flex justify-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center transition duration-500"
+            >
+              <svg
+                width="24"
+                height="24"
+                class="w-32 h-32 text-gold-light"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 13C14.7614 13 17 10.7614 17 8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8C7 10.7614 9.23858 13 12 13Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 8C14 8.53043 13.7893 9.03914 13.4142 9.41421C13.0391 9.78929 12.5304 10 12 10C11.4696 10 10.9609 9.78929 10.5858 9.41421C10.2107 9.03914 10 8.53043 10 8C10 7.46957 10.2107 6.96086 10.5858 6.58579C10.9609 6.21071 11.4696 6 12 6C12.5304 6 13.0391 6.21071 13.4142 6.58579C13.7893 6.96086 14 7.46957 14 8Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 8L17.7291 17.4776C17.8151 18.5961 17.8581 19.1553 17.6529 19.4485C17.4747 19.7033 17.1881 19.8606 16.8774 19.8742C16.5199 19.8899 16.0712 19.5534 15.1738 18.8803L14.88 18.66C13.8472 17.8854 13.3308 17.4981 12.7637 17.3488C12.2631 17.2171 11.7369 17.2171 11.2363 17.3488C10.6692 17.4981 10.1528 17.8854 9.12001 18.66L8.82625 18.8803C7.92883 19.5534 7.48012 19.8899 7.12261 19.8742C6.81197 19.8606 6.52534 19.7033 6.34708 19.4485C6.14191 19.1553 6.18493 18.5961 6.27097 17.4776L7.00001 8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
+            Design e Comfort
+          </h3>
+          <p
+            class="text-[11px] text-gray-500 leading-relaxed uppercase tracking-wider"
+          >
+            Ambienti raffinati, curati in ogni dettaglio.
+          </p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="text-center group">
+          <div class="mb-6 flex justify-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center transition duration-500"
+            >
+              <svg
+                width="24"
+                height="24"
+                class="w-32 h-32 text-gold-light"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 3.53513C12.5741 3.21655 13.2969 3 14 3C16.2091 3 18 4.79086 18 7C18 9.20914 16.2091 11 14 11C13.2714 11 12.5883 10.8052 12 10.4649M12 10.4649C13.1956 9.77325 14 8.48056 14 7C14 4.79086 12.2091 3 10 3C7.79086 3 6 4.79086 6 7C6 9.20914 7.79086 11 10 11C10.7286 11 11.4117 10.8052 12 10.4649Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M12 14.2899C12.6337 14.1013 13.305 14 14 14C16.8278 14 19.264 15.6768 20.3685 18.0903C21.0579 19.5969 19.6568 21 18 21H6.99997M3.63147 18.0903C4.73597 15.6768 7.17215 14 9.99997 14C12.8278 14 15.264 15.6768 16.3685 18.0903C17.0579 19.5969 15.6568 21 14 21H5.99997C4.34311 21 2.94201 19.5969 3.63147 18.0903Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
+            Per Coppie
+          </h3>
+          <p
+            class="text-[11px] text-gray-500 leading-relaxed uppercase tracking-wider"
+          >
+            L'atmosfera perfetta per momenti speciali.
+          </p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="text-center group">
+          <div class="mb-6 flex justify-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center transition duration-500"
+            >
+              <svg
+                width="24"
+                height="24"
+                class="w-32 h-32 text-gold-light"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 21V6C15 4.34315 13.6569 3 12 3C10.3431 3 9 4.34315 9 6V21M21 12.5V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V12.5C3 11.1022 3 10.4033 3.22836 9.85195C3.53284 9.11687 4.11687 8.53284 4.85195 8.22836C5.40326 8 6.10218 8 7.5 8H16.5C17.8978 8 18.5967 8 19.1481 8.22836C19.8831 8.53284 20.4672 9.11687 20.7716 9.85195C21 10.4033 21 11.1022 21 12.5Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
+            Ospitalità Italiana
+          </h3>
+          <p
+            class="text-[11px] text-gray-500 leading-relaxed uppercase tracking-wider"
+          >
+            Accoglienza calda e servizi dedicati.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END: FeaturesSection -->
+    <!-- BEGIN: WelcomeSection -->
+    <section class="py-0 overflow-hidden" id="features">
+      <div class="flex flex-col md:flex-row">
+        <!-- Text Side -->
+        <div
+          class="flex-1 bg-luxury-beige p-12 md:p-24 flex flex-col justify-center"
+        >
+          <span
+            class="text-[10px] tracking-[0.4em] uppercase text-gold-light mb-4"
+            >Benvenuti</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-serif text-luxury-charcoal mb-6 leading-tight uppercase"
+          >
+            Eleganza, Storia<br />e Autenticità
+          </h2>
+          <div class="flex items-center mb-8 space-x-2">
+            <div class="w-10 h-[1px] bg-gold-light"></div>
+            <img
+              alt="Decorative Line"
+              class="w-6 h-6 text-gold-light"
+              src="../assets/logo.svg">
+            <div class="w-10 h-[1px] bg-gold-light"></div>
+          </div>
+          <div class="space-y-4 text-sm text-gray-600 leading-relaxed max-w-md">
+            <p>
+              Nel cuore pulsante di Torino, un appartamento esclusivo dove il
+              fascino della storia incontra il comfort moderno.
+            </p>
+            <p>
+              Ogni dettaglio è pensato per farti vivere un soggiorno
+              indimenticabile.
+            </p>
+          </div>
+          <div class="mt-12">
+            <a
+              href="https://wa.me/393356110429?text="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                class="px-6 py-2 border border-gold-light text-[10px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition duration-300"
+              >
+                Prenota Ora
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- Image Side -->
+        <div class="flex-1 min-h-[500px]">
+          <img
+            alt="Decorative Iron Gate Detail"
+            class="w-full h-full object-cover"
+            src="../assets/pic.webp"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- END: WelcomeSection -->
+    <!-- Gallery Section (Il Tuo Soggiorno a Torino) Removed per request -->
+    <!-- BEGIN: Footer -->
+    <footer class="bg-luxury-beige pt-20 pb-8 px-6 border-t border-gray-100">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+          <!-- Column 1: Branding -->
+          <div class="flex flex-col items-center md:items-start">
+            <div
+              class="flex items-center space-x-3 mb-6"
+              data-purpose="footer-logo"
+            >
+              <div class="w-12 h-12 flex items-center justify-center">
+                <img
+                  alt="Logo"
+                  class="w-8 h-8 text-gold-light font-serif italic"
+                  src="../assets/logo.svg"
+                />
+              </div>
+              <div class="leading-none">
+                <p class="text-sm tracking-[0.3em] font-medium uppercase">
+                  Appartamento
+                </p>
+                <p class="text-xs tracking-[0.3em] text-gray-400 uppercase">
+                  Torino Centro
+                </p>
+              </div>
+            </div>
+            <!-- Socials -->
+            <div class="flex space-x-4 mt-4">
+              <a
+                class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:border-gold-light hover:text-gold-light transition"
+                href="https://www.instagram.com/appartamento.torino.centro/"
+                ><span class="text-xs">IG</span></a
+              >
+              <a
+                class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:border-gold-light hover:text-gold-light transition"
+                href="https://www.facebook.com/people/Appartamento-Torino-Centro/61589931309081/"
+                ><span class="text-xs">FB</span></a
+              >
+              <a
+                class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:border-gold-light hover:text-gold-light transition"
+                href="https://www.tiktok.com/@appartament.torino.centr"
+                ><span class="text-xs">TK</span></a
+              >
+            </div>
+          </div>
+          <!-- Column 2: Contact & Address (Menu Links cleaned up per request) -->
+          <div class="text-center md:text-left">
+            <h4 class="text-[10px] tracking-[0.4em] uppercase font-bold mb-8">
+              Contatti
+            </h4>
+            <ul
+              class="space-y-4 text-[11px] tracking-widest uppercase text-gray-500"
+            >
+              <li class="flex items-center justify-center md:justify-start">
+                <span class="mr-2">📞</span> +39 3356110429
+              </li>
+              <li class="flex items-center justify-center md:justify-start">
+                <span class="mr-2">✉️</span> info@appartamentotorinocentro.it
+              </li>
+              <li class="flex items-center justify-center md:justify-start">
+                <span class="mr-2">📍</span> Torino, Italia
+              </li>
+            </ul>
+            <div class="mt-8">
+              <a
+                href="https://wa.me/393356110429?text="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button
+                  class="px-6 py-2 border border-gold-light text-[9px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition"
+                >
+                  Prenota Ora
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright Bar -->
+        <div
+          class="border-t border-gray-200 pt-8 flex flex-col md:row justify-between items-center text-[10px] text-gray-400 tracking-widest uppercase"
+        >
+          <p>
+            © 2021-26 Appartamento Torino Centro - Tutti i diritti riservati
+          </p>
+          <p>P. IVA: 115560400019</p>
+        </div>
+      </div>
     </footer>
+    <!-- END: Footer -->
   </body>
 </html>
