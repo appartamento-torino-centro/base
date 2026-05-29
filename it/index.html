@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Appartamento Torino Centro - Luxury Stay</title>
+    <script src="https://kit.fontawesome.com/ea7aefc2e0.js" crossorigin="anonymous"></script>
     <!-- Google Fonts for Luxury Serif feel -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@300;400;500&amp;display=swap"
@@ -78,15 +79,28 @@
           <div class="w-10 h-10 flex items-center justify-center">
             <img
               alt="Logo"
-              class="w-6 h-6 text-gold-light font-serif italic"
+              class="w-10 h-10 text-gold-light font-serif italic"
               src="../assets/logo.svg"
             />
           </div>
           <div class="leading-none">
-            <p class="text-xs tracking-[0.3em] font-medium uppercase">
+            <p
+              class="text-xs tracking-[0.3em] font-medium uppercase text-center"
+            >
               Appartamento
             </p>
-            <p class="text-xs tracking-[0.3em] text-gray-400 uppercase">
+            <div class="flex items-center space-x-2">
+              <div class="w-1/2 h-[1px] bg-gold-light"></div>
+              <img
+                alt="Decorative Line"
+                class="w-4 h-4 text-gold-light"
+                src="../assets/logo.svg"
+              />
+              <div class="w-1/2 h-[1px] bg-gold-light"></div>
+            </div>
+            <p
+              class="text-xs tracking-[0.3em] text-gray-400 uppercase text-center"
+            >
               Torino Centro
             </p>
           </div>
@@ -113,21 +127,31 @@
     <!-- BEGIN: HeroSection -->
     <section class="relative h-[85vh] overflow-hidden">
       <!-- Hero Image Background -->
-      <div class="absolute inset-0">
-        <img
-          alt="Luxury Living Room"
-          class="w-full h-full object-cover"
-          src="../assets/hero.webp"
-        />
-        <div class="absolute inset-0 hero-overlay"></div>
-      </div>
+      <div
+        class="absolute inset-0 w-full h-full"
+        style="
+          background:
+            linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+            url(&quot;../assets/app_hero.webp&quot;);
+          background-size: cover;
+          background-position: center;
+        "
+      ></div>
       <!-- Hero Content -->
       <div class="relative container mx-auto h-full flex items-center px-6">
         <div class="max-w-2xl text-white">
           <h1 class="text-5xl md:text-6xl font-serif mb-4 leading-tight">
             VIVI TORINO,<br />SENTITI A CASA.
           </h1>
-          <div class="w-12 h-[1px] bg-gold-light mb-6"></div>
+          <div class="flex items-center space-x-2">
+            <div class="w-10 h-[1px] bg-gold-light"></div>
+            <img
+              alt="Decorative Line"
+              class="w-6 h-6 text-gold-light"
+              src="../assets/logo.svg"
+            />
+            <div class="w-10 h-[1px] bg-gold-light"></div>
+          </div>
           <p class="text-lg md:text-xl font-light italic mb-8 opacity-90">
             Un rifugio elegante e romantico nel cuore della città.
           </p>
@@ -153,25 +177,10 @@
             <div
               class="w-16 h-16 flex items-center justify-center transition duration-500"
             >
-              <svg
-                width="24"
-                height="24"
+              <img 
+                alt="Icona Posizione"
                 class="w-32 h-32 text-gold-light"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 11.5689C3 10.6296 3 10.16 3.12945 9.73377C3.24406 9.3564 3.43194 9.00534 3.68236 8.70065C3.96523 8.35649 4.35597 8.096 5.13744 7.57502L9.33744 4.77502C10.2997 4.1335 10.7808 3.81275 11.3009 3.68813C11.7605 3.578 12.2395 3.578 12.6991 3.68813C13.2192 3.81275 13.7003 4.1335 14.6626 4.77502L18.8626 7.57502C19.644 8.096 20.0348 8.35649 20.3176 8.70065C20.5681 9.00534 20.7559 9.3564 20.8705 9.73377C21 10.16 21 10.6296 21 11.5689V16.2C21 17.8801 21 18.7202 20.673 19.3619C20.3854 19.9264 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9264 3.32698 19.3619C3 18.7202 3 17.8801 3 16.2V11.5689Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                />
-                <path
-                  d="M9 15C9 13.3431 10.3431 12 12 12C13.6569 12 15 13.3431 15 15V21H9V15Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                />
-              </svg>
+                src="../assets/home.svg">
             </div>
           </div>
           <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
@@ -189,34 +198,10 @@
             <div
               class="w-16 h-16 flex items-center justify-center transition duration-500"
             >
-              <svg
-                width="24"
-                height="24"
+              <img 
+                alt="Icona Design"
                 class="w-32 h-32 text-gold-light"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 13C14.7614 13 17 10.7614 17 8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8C7 10.7614 9.23858 13 12 13Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M14 8C14 8.53043 13.7893 9.03914 13.4142 9.41421C13.0391 9.78929 12.5304 10 12 10C11.4696 10 10.9609 9.78929 10.5858 9.41421C10.2107 9.03914 10 8.53043 10 8C10 7.46957 10.2107 6.96086 10.5858 6.58579C10.9609 6.21071 11.4696 6 12 6C12.5304 6 13.0391 6.21071 13.4142 6.58579C13.7893 6.96086 14 7.46957 14 8Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 8L17.7291 17.4776C17.8151 18.5961 17.8581 19.1553 17.6529 19.4485C17.4747 19.7033 17.1881 19.8606 16.8774 19.8742C16.5199 19.8899 16.0712 19.5534 15.1738 18.8803L14.88 18.66C13.8472 17.8854 13.3308 17.4981 12.7637 17.3488C12.2631 17.2171 11.7369 17.2171 11.2363 17.3488C10.6692 17.4981 10.1528 17.8854 9.12001 18.66L8.82625 18.8803C7.92883 19.5534 7.48012 19.8899 7.12261 19.8742C6.81197 19.8606 6.52534 19.7033 6.34708 19.4485C6.14191 19.1553 6.18493 18.5961 6.27097 17.4776L7.00001 8"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                />
-              </svg>
+                src="../assets/bed.svg">
             </div>
           </div>
           <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
@@ -234,25 +219,10 @@
             <div
               class="w-16 h-16 flex items-center justify-center transition duration-500"
             >
-              <svg
-                width="24"
-                height="24"
+              <img 
+                alt="Icona Coppie"
                 class="w-32 h-32 text-gold-light"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 3.53513C12.5741 3.21655 13.2969 3 14 3C16.2091 3 18 4.79086 18 7C18 9.20914 16.2091 11 14 11C13.2714 11 12.5883 10.8052 12 10.4649M12 10.4649C13.1956 9.77325 14 8.48056 14 7C14 4.79086 12.2091 3 10 3C7.79086 3 6 4.79086 6 7C6 9.20914 7.79086 11 10 11C10.7286 11 11.4117 10.8052 12 10.4649Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                />
-                <path
-                  d="M12 14.2899C12.6337 14.1013 13.305 14 14 14C16.8278 14 19.264 15.6768 20.3685 18.0903C21.0579 19.5969 19.6568 21 18 21H6.99997M3.63147 18.0903C4.73597 15.6768 7.17215 14 9.99997 14C12.8278 14 15.264 15.6768 16.3685 18.0903C17.0579 19.5969 15.6568 21 14 21H5.99997C4.34311 21 2.94201 19.5969 3.63147 18.0903Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                />
-              </svg>
+                src="../assets/hearts.svg">
             </div>
           </div>
           <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
@@ -270,20 +240,10 @@
             <div
               class="w-16 h-16 flex items-center justify-center transition duration-500"
             >
-              <svg
-                width="24"
-                height="24"
+              <img 
+                alt="Icona Ospitalità"
                 class="w-32 h-32 text-gold-light"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15 21V6C15 4.34315 13.6569 3 12 3C10.3431 3 9 4.34315 9 6V21M21 12.5V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V12.5C3 11.1022 3 10.4033 3.22836 9.85195C3.53284 9.11687 4.11687 8.53284 4.85195 8.22836C5.40326 8 6.10218 8 7.5 8H16.5C17.8978 8 18.5967 8 19.1481 8.22836C19.8831 8.53284 20.4672 9.11687 20.7716 9.85195C21 10.4033 21 11.1022 21 12.5Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                />
-              </svg>
+                src="../assets/cloche.svg">
             </div>
           </div>
           <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
@@ -319,7 +279,8 @@
             <img
               alt="Decorative Line"
               class="w-6 h-6 text-gold-light"
-              src="../assets/logo.svg">
+              src="../assets/logo.svg"
+            />
             <div class="w-10 h-[1px] bg-gold-light"></div>
           </div>
           <div class="space-y-4 text-sm text-gray-600 leading-relaxed max-w-md">
@@ -351,13 +312,126 @@
           <img
             alt="Decorative Iron Gate Detail"
             class="w-full h-full object-cover"
-            src="../assets/pic.webp"
+            src="../assets/turin_vertical.webp"
           />
         </div>
       </div>
     </section>
     <!-- END: WelcomeSection -->
-    <!-- Gallery Section (Il Tuo Soggiorno a Torino) Removed per request -->
+
+    <!-- BEGIN: ServicesSection -->
+    <section class="py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <span
+            class="text-[10px] tracking-[0.4em] uppercase text-gold-light mb-4 block"
+            >Comfort &amp; Servizi</span
+          >
+          <h2
+            class="text-3xl md:text-4xl font-serif text-luxury-charcoal uppercase tracking-wider"
+          >
+            Servizi e Optional
+          </h2>
+          <div class="flex justify-center mt-6">
+            <div class="w-12 h-[1px] bg-gold-light"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-y-16 gap-x-8">
+          <!-- Service 1 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Wi-Fi Alta Velocità"
+                class="w-10 h-10"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_34ieCYqagfLnR9Xv6uNZZOPZ9gVUZVV0OOFbu04yZP75bv0_0_1QnmV6RQkMB566iPssSeiDF2Kbc84xH6kJ3CFLazJ-wxI_6UX1JjFsiwrAseTOt0Q_pW8Ee1ouRM1qWpBEB5rlf_PIGn7bqIjj1veLmDqwi8734cEMeLpFqFj_aXG7AN1X3q-b_od-a47nrXr55eQZCP6YKA1oULVOqbGs2GkxbVIBCMl48QoewcHq76lcw48g2Un-MPoWYdkL1cy5wYiHoL4"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              Wi-Fi Alta Velocità
+            </p>
+          </div>
+          <!-- Service 2 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Aria Condizionata"
+                class="w-10 h-10"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0UUY5ypRmrhpjNS98hNKIPmHf0uyrR55LSRRvk2NlWDBWiWvcMFlhs8RkNJGq_6o7fwBXuVKBzqVuOHSb0ZcCidOsuBpaE89wYs2sTktZFDvytrFmHKbNTT8rjb7T0l4JneN0mEFr2PrB_RkA-pFRAScoXsGskwqMxE5Cj3D9YniHf1cf82pBYma72L4sJTHJ_282t2xspJR0yMSusXCo7064KDG3ytHWU28aYLA12PXxGUT-4Qpt-j_cl1Jm0ns7O9OlN9_0_rs"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              Aria Condizionata
+            </p>
+          </div>
+          <!-- Service 3 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Cucina Attrezzata"
+                class="w-10 h-10"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJHhd7KoRvUujYXB_1R9wl7QMeQFSKJewGVUEchNTk5V0BiUHAbHlKcK41-GhhMgU7D5WSXwWpMPqMqC6CKbskxKugLH8R76HJe5q0OKG2eDFsYRxwv7D--eVUhdpqk0eulC_02JOdBzr1DGcZCWL99NHmMBO-NLyv1pZSJ4wDWnDsFCQ61PqSwW3WviYGUqbFjGLXh7vIUlJRfshnfMZNdz4iUnijClux8hG8gxAF7XkUU3zOjecC5eNhaVfJEDtggUblJ684Eaw"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              Cucina Attrezzata
+            </p>
+          </div>
+          <!-- Service 4 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Lavatrice"
+                class="w-10 h-10"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_Lgc6GOft65rKHfHe2vpZ9TE4WMaZWLZEvziiqO9YzULNnCatWVMuxA0JDL4l2lVPXaPZZyly0dKRkeFsWIJIGEUZSjqM3CpMtt5Yy1l8JAK8_Mx_aznuvaVVrwxVgw6p5w9QInZENVfGkcnsSPDaBtPhZXZO6KK43oL4V3FuRH3bVjbrlbO5fdzjta6AQXh7wBxT2DE9LD3iZynhlbQYJiX0T8yyhQbhslhnQxNLkY5YvOncAc3O45-E3HtFeHVKWtE1ii-NrvM"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              Lavatrice
+            </p>
+          </div>
+          <!-- Service 5 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Smart TV"
+                class="w-10 h-10"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmrqcJ2GvbIa5KbiDcdlv1xTWBIf0HMcj0RfojBXeNx8q0ytppGWqp0ysJVXd8__mmAstJ3bVmtXEdFaM3WWVzvKls5pROdBjToN5BmhI6mmf5YlZNY0aJitSNZUMk7VthHgd-OgZ6ZHpnA5F7PglH35oyOuoO1-9XlnncpXeUVn8V1Eh8PVWsu19wwVcdzCBaBirGDBKQn-vFwQVUOmtUJGltZNIxW-AXQhtZ7rY-BK9KTFKEw964O2OMweVwGuBxtAeGsp2nTUM"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              Smart TV
+            </p>
+          </div>
+          <!-- Service 6 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Asciugacapelli"
+                class="w-10 h-10"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAob00K8Qw36SCm3QPKVz-REj8b53eUSt9t0jZQC4fJsTc-BKcFMOT0KTm_oI8vAYPFrAUPEnPlW8LFHVluVUJGrpBtwtVZCOWHElh0iClkoJtOi9Xw6fyyB6iboGydLH5TYfQsoBUyWDl_JQ6GJyGaRvdcBemfSk4b5QKJ-h7Q-_SboV_YSTv_CxfRqslenMnF-vpwzWmHjVZj3Up-TQPrPAyV2bFyoPVLOlMBWccoWqpYWYOyThreta1CNSP4R6E4P8HkTmkJX1I"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              Asciugacapelli
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: ServicesSection -->
+
     <!-- BEGIN: Footer -->
     <footer class="bg-luxury-beige pt-20 pb-8 px-6 border-t border-gray-100">
       <div class="max-w-7xl mx-auto">
@@ -389,17 +463,31 @@
               <a
                 class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:border-gold-light hover:text-gold-light transition"
                 href="https://www.instagram.com/appartamento.torino.centro/"
-                ><span class="text-xs">IG</span></a
-              >
+                >
+                <img
+                  alt="Instagram"
+                  class="w-4 h-4"
+                  src="../assets/instagram.svg"/>
+                </a>
               <a
                 class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:border-gold-light hover:text-gold-light transition"
                 href="https://www.facebook.com/people/Appartamento-Torino-Centro/61589931309081/"
-                ><span class="text-xs">FB</span></a
+                >
+                <img
+                  alt="Instagram"
+                  class="w-4 h-4"
+                  src="../assets/facebook.svg"/>
+                </a
               >
               <a
                 class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:border-gold-light hover:text-gold-light transition"
                 href="https://www.tiktok.com/@appartament.torino.centr"
-                ><span class="text-xs">TK</span></a
+                >
+                  <img
+                    alt="Instagram"
+                    class="w-4 h-4"
+                    src="../assets/tiktok.svg"/>
+                </a
               >
             </div>
           </div>
