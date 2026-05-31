@@ -1,525 +1,562 @@
 <!doctype html>
 
-<html class="light" lang="en">
+<html lang="it">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Appartamento Torino Centro</title>
+    <title>Appartamento Torino Centro - Luxury Stay</title>
+    <!-- Google Fonts for Luxury Serif feel -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@300;400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;600&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-          "FILL" 0,
-          "wght" 300,
-          "GRAD" 0,
-          "opsz" 24;
-      }
-      body {
-        scroll-behavior: smooth;
-      }
-      .editorial-grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 32px;
-      }
-    </style>
-    <script id="tailwind-config">
+    <script>
       tailwind.config = {
-        darkMode: "class",
         theme: {
           extend: {
             colors: {
-              error: "#ba1a1a",
-              "inverse-primary": "#e9c176",
-              "on-primary-container": "#4e3700",
-              "surface-bright": "#fcf9f8",
-              "on-secondary": "#ffffff",
-              "on-error-container": "#93000a",
-              "on-secondary-fixed-variant": "#733521",
-              "on-secondary-container": "#783924",
-              "on-surface": "#1c1b1b",
-              tertiary: "#735c00",
-              "on-primary-fixed": "#261900",
-              "primary-fixed": "#ffdea5",
-              "on-tertiary-container": "#493900",
-              "secondary-fixed-dim": "#ffb59e",
-              surface: "#fcf9f8",
-              "surface-container": "#f0eded",
-              "outline-variant": "#d1c5b4",
-              "on-tertiary": "#ffffff",
-              "on-surface-variant": "#4e4639",
-              "secondary-fixed": "#ffdbd0",
-              "error-container": "#ffdad6",
-              "surface-container-high": "#eae7e7",
-              "secondary-container": "#fea58a",
-              "surface-variant": "#e5e2e1",
-              "surface-dim": "#dcd9d9",
-              secondary: "#904b36",
-              "surface-container-low": "#f6f3f2",
-              "tertiary-container": "#c5a129",
-              "surface-tint": "#775a19",
-              "on-tertiary-fixed": "#241a00",
-              "on-error": "#ffffff",
-              "surface-container-lowest": "#ffffff",
-              "on-tertiary-fixed-variant": "#574500",
-              "surface-container-highest": "#e5e2e1",
-              outline: "#7f7667",
-              background: "#fcf9f8",
-              primary: "#775a19",
-              "on-background": "#1c1b1b",
-              "on-primary": "#ffffff",
-              "tertiary-fixed-dim": "#e9c349",
-              "tertiary-fixed": "#ffe088",
-              "primary-container": "#c5a059",
-              "inverse-on-surface": "#f3f0ef",
-              "primary-fixed-dim": "#e9c176",
-              "inverse-surface": "#313030",
-              "on-secondary-fixed": "#3a0b00",
-              "on-primary-fixed-variant": "#5d4201",
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
-            spacing: {
-              "container-max": "1280px",
-              "margin-safe": "64px",
-              "section-padding": "120px",
-              gutter: "32px",
-              unit: "8px",
+              "gold-light": "#c5a059",
+              "gold-dark": "#a38146",
+              "luxury-beige": "#f9f6f1",
+              "luxury-charcoal": "#121411",
+              "surface-container": "#1e201d",
+              "on-surface": "#e3e3de",
+              "on-surface-variant": "#d1c5b4",
+              "surface-elevated": "#1e1e1e",
+              "champagne": "#F5F5F0",
             },
             fontFamily: {
-              "headline-md": ["Noto Serif"],
-              "label-sm": ["Plus Jakarta Sans"],
-              "display-xl": ["Noto Serif"],
-              "headline-lg": ["Noto Serif"],
-              "body-md": ["Plus Jakarta Sans"],
-              "body-lg": ["Plus Jakarta Sans"],
-            },
-            fontSize: {
-              "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "400" }],
-              "label-sm": [
-                "12px",
-                {
-                  lineHeight: "1.2",
-                  letterSpacing: "0.1em",
-                  fontWeight: "600",
-                },
-              ],
-              "display-xl": [
-                "72px",
-                {
-                  lineHeight: "1.1",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "400",
-                },
-              ],
-              "headline-lg": ["48px", { lineHeight: "1.2", fontWeight: "400" }],
-              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
-              "body-lg": [
-                "18px",
-                {
-                  lineHeight: "1.8",
-                  letterSpacing: "0.01em",
-                  fontWeight: "300",
-                },
-              ],
+              serif: ["Playfair Display", "serif"],
+              sans: ["Montserrat", "sans-serif"],
             },
           },
         },
       };
     </script>
+    <style data-purpose="custom-typography">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #ffffff;
+        color: #2d2d2d;
+      }
+      h1,
+      h2,
+      h3,
+      .serif-font {
+        font-family: "Playfair Display", serif;
+      }
+      .letter-spacing-wide {
+        letter-spacing: 0.15em;
+      }
+    </style>
+    <style data-purpose="layout-refinements">
+      .hero-overlay {
+        background: rgba(0, 0, 0, 0.2);
+      }
+      .border-gold {
+        border-color: #c5a059;
+      }
+      .text-gold {
+        color: #c5a059;
+      }
+      .bg-luxury-beige {
+        background-color: #f9f6f1;
+      }
+    </style>
   </head>
-  <body class="bg-background text-on-background font-body-md">
-    <!-- TopAppBar -->
+  <body class="antialiased">
+    <!-- BEGIN: MainHeader -->
     <header
-      class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-stone-100"
+      class="bg-white/95 dark:bg-luxury-charcoal/95 sticky top-0 z-50 border-b border-gray-100 px-6 py-4 dark:border-white/5"
     >
-      <nav
-        class="flex md:flex-row flex-col justify-between items-start md:items-center w-full px-16 py-6 max-w-[1440px] mx-auto"
-      >
-        <div
-          class="text-2xl font-serif tracking-[0.2em] uppercase text-stone-900"
-        >
-          APPARTAMENTO TORINO CENTRO
-        </div>
-        <a href="https://wa.me/+393356110429?text=" target="_blank">
-          <button
-            class="bg-primary text-on-primary px-8 py-3 font-label-sm uppercase tracking-widest hover:opacity-80 transition-all active:scale-95"
-          >
-            Book Now
-          </button>
-        </a>
-      </nav>
-    </header>
-    <main>
-      <!-- Hero Section -->
-      <section class="relative h-screen flex items-center overflow-hidden">
-        <div
-          class="absolute inset-0 z-0"
-          style="
-            background:
-              linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
-              url(&quot;../assets/hero.webp&quot;);
-            background-size: cover;
-            background-position: center;
-          "
-          data-alt="The grand architectural facade of Palazzo Madama in Turin, Italy. The limestone building shows large arched windows, Corinthian columns, and a balustrade adorned with statues. In front stands the Monument to the Alfiere dell'Esercito Sardo in the center of the paved square."
-        ></div>
-        <div class="relative z-10 px-margin-safe max-w-[1440px] mx-auto w-full">
-          <div class="max-w-3xl">
-            <span
-              class="font-label-sm uppercase tracking-[0.3em] text-on-primary mb-6 block"
-              >Est. 2021 — Turin, Italy</span
-            >
-            <h1 class="font-display-xl text-white mb-12">
-              Experience Luxury Living in Turin
-            </h1>
-            <div class="flex items-center gap-6">
-              <div class="h-[1px] w-24 bg-white/50"></div>
-              <p class="text-white/80 font-body-lg italic">
-                An architectural sanctuary for the modern connoisseur.
-              </p>
-            </div>
+      <div class="w-full flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2" data-purpose="site-logo">
+          <div class="w-10 h-10 flex items-center justify-center">
+            <img
+              alt="Logo"
+              class="w-10 h-10 text-gold-light font-serif italic"
+              src="../assets/logo.svg"
+            />
           </div>
-        </div>
-      </section>
-      <!-- Featured Apartments -->
-      <section class="py-section-padding px-margin-safe max-w-[1440px] mx-auto">
-        <div class="flex justify-between items-end mb-16">
-          <div class="max-w-xl">
-            <h2 class="font-headline-lg text-stone-900 mb-4">
-              Curated Residence
-            </h2>
-            <p class="font-body-lg text-stone-500 italic">
-              The appartment is a dialogue between Piedmontese heritage and
-              contemporary design.
+          <div class="leading-none">
+            <p
+              class="text-xs tracking-[0.3em] font-medium uppercase text-center dark:text-white"
+            >
+              Appartamento
+            </p>
+            <div class="flex items-center space-x-2">
+              <div class="w-1/2 h-[1px] bg-gold-light"></div>
+              <img
+                alt="Decorative Line"
+                class="w-4 h-4 text-gold-light"
+                src="../assets/logo.svg"
+              />
+              <div class="w-1/2 h-[1px] bg-gold-light"></div>
+            </div>
+            <p
+              class="text-xs tracking-[0.3em] text-gray-400 uppercase text-center"
+            >
+              Torino Centro
             </p>
           </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <!-- Suite 1 -->
-          <div class="group">
-            <div class="aspect-[3/4] overflow-hidden mb-6 relative">
-              <img
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="A cozy interior living space featuring a white sofa covered with a plush, faux-fur beige and white throw. On the sofa are two decorative pillows: one black with a gold embroidered elephant and another covered in shimmering gold sequins. Hanging on the white wall above the sofa is a large, ornate empty gold picture frame. To the left, there is a small yellow velvet stool and framed botanical art, while a white floor lamp stands to the right."
-                src="../assets/pic1.webp"
-              />
-              <div
-                class="absolute inset-0 border-[0px] group-hover:border-[1px] border-primary transition-all duration-300 pointer-events-none"
-              ></div>
-            </div>
-          </div>
-          <!-- Suite 2 -->
-          <div class="group md:mt-24">
-            <div class="aspect-[3/4] overflow-hidden mb-6 relative">
-              <img
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="A dark wood oriental-style console table with gold circular hardware set against sheer white curtains. On the table, there is a tall gold pillar candle in a clear glass pedestal holder, a decorative tissue box, and a gold bowl with a floral cutout pattern. The scene is framed by heavy olive-green drapes on the sides."
-                src="../assets/pic2.webp"
-              />
-              <div
-                class="absolute inset-0 border-[0px] group-hover:border-[1px] border-primary transition-all duration-300 pointer-events-none"
-              ></div>
-            </div>
-          </div>
-          <!-- Suite 3 -->
-          <div class="group">
-            <div class="aspect-[3/4] overflow-hidden mb-6 relative">
-              <img
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="An elegant interior view featuring a white decorative fireplace mantel used as a shelf. On top of the mantel sits a classic white bust and a crystal bowl. Inside the fireplace opening are several large white pillar candles and a dark oriental vase. The wall above is decorated with a gallery of black and white framed photos of wild animals and nature. In the foreground, a black armchair and a white sofa are visible, featuring pillows with a sequined lobster and a gold leopard."
-                src="../assets/pic3.webp"
-              />
-              <div
-                class="absolute inset-0 border-[0px] group-hover:border-[1px] border-primary transition-all duration-300 pointer-events-none"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Amenities (Bento Style) -->
-      <section class="py-section-padding bg-stone-50 overflow-x-hidden">
-        <div class="px-margin-safe max-w-[1440px] mx-auto">
-          <div class="grid grid-cols-12 md:gap-8">
-            <div
-              class="col-span-12 lg:col-span-4 flex flex-col justify-center pr-12"
+        <!-- Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8"></nav>
+        <!-- CTA -->
+        <div>
+          <a
+            href="https://wa.me/393356110429?text=Good%20morning%2C%20I%27m%20interested%20in%20booking%20a%20stay%20and%20would%20like%20to%20receive%20more%20information."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              class="px-6 py-2 border border-gold-light text-[10px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition duration-300 dark:text-gold-light dark:hover:text-luxury-charcoal"
             >
-              <h2 class="font-headline-lg text-stone-900 mb-6 leading-tight">
-                Refined Amenities for the Modern Traveler
-              </h2>
-              <p class="font-body-lg text-stone-500 mb-8">
-                We offer more than a place; we provide a curated environment
-                designed for both productivity and repose.
-              </p>
-              <div class="flex flex-col gap-4">
-                <div
-                  class="flex items-center gap-4 py-4 border-b border-stone-200"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary"
-                    data-weight="fill"
-                    >wifi</span
-                  >
-                  <span class="font-label-sm uppercase tracking-widest"
-                    >Free WiFi</span
-                  >
-                </div>
-                <div
-                  class="flex items-center gap-4 py-4 border-b border-stone-200"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary"
-                    data-weight="fill"
-                    >ac_unit</span
-                  >
-                  <span class="font-label-sm uppercase tracking-widest"
-                    >Climate Control</span
-                  >
-                </div>
-                <div
-                  class="flex items-center gap-4 py-4 border-b border-stone-200"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary"
-                    data-weight="fill"
-                    >location_on</span
-                  >
-                  <span class="font-label-sm uppercase tracking-widest"
-                    >Central Quadrilatero</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-span-12 lg:col-span-8 grid md:grid-cols-2 gap-8">
-              <div
-                class="bg-white p-6 md:p-12 box-border flex flex-col justify-between aspect-square lg:aspect-auto min-w-0 mt-8 md:mt-0"
-              >
-                <span
-                  class="material-symbols-outlined text-4xl text-primary mb-12"
-                  >coffee</span
-                >
-                <div>
-                  <h4 class="font-headline-md mb-2">Coffe in Appartment</h4>
-                  <p class="font-body-md text-stone-500">
-                    The refined pleasure of a perfect pour, curated for your
-                    private awakening.
-                  </p>
-                </div>
-              </div>
-              <div class="relative overflow-hidden aspect-square">
-                <img
-                  class="w-full h-full object-cover block"
-                  data-alt="A beautiful bouquet of white lilies, amaryllis, and green hydrangeas in a fluted glass vase, placed on a marble windowsill. In the background, typical Italian city buildings with shutters are visible through the window. The scene includes festive gold decorations, a gold candle, and a decorative gold bowl."
-                  src="../assets/flowers.webp"
-                />
-              </div>
-              <div class="relative overflow-hidden aspect-square">
-                <img
-                  class="w-full h-full object-cover block"
-                  data-alt="A clean, modern minimalist kitchen with white handleless cabinets and a marble-effect countertop. The kitchen is equipped with a built-in oven, an induction cooktop, a stainless steel sink, and a coffee machine. A vibrant red rug with a white polka-dot pattern adds a pop of color to the light wood floor."
-                  src="../assets/kitchen.webp"
-                />
-              </div>
-              <div
-                class="bg-stone-900 p-6 md:p-12 box-border text-white flex flex-col justify-between aspect-square lg:aspect-auto min-w-0"
-              >
-                <span
-                  class="material-symbols-outlined text-4xl text-amber-500 mb-12"
-                  >kitchen</span
-                >
-                <div>
-                  <h4 class="font-headline-md mb-2">Modern Kitchen</h4>
-                  <p class="font-body-md text-stone-400">
-                    Fully equipped with top-tier appliances and culinary
-                    essentials for a delightful cooking experience.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+              Book Now
+            </button>
+          </a>
         </div>
-      </section>
-      <!-- Testimonials -->
-      <section
-        class="py-section-padding px-margin-safe max-w-[1440px] mx-auto text-center"
-      >
-        <span class="material-symbols-outlined text-primary text-6xl mb-12"
-          >format_quote</span
-        >
-        <div class="max-w-4xl mx-auto">
-          <p class="font-headline-lg italic text-stone-800 mb-12">
-            "A very cozy apartment, tastefully furnished, clean, and
-            comfortable. Plenty of space for four people. The owner provided all
-            the necessary instructions for check-in and responded promptly to
-            our requests. The apartment is located near the central station,
-            just a short walk from downtown."
-          </p>
-          <div class="flex flex-col items-center">
-            <span
-              class="font-label-sm uppercase tracking-[0.2em] text-stone-900"
-              >Mary — Italy</span
-            >
-            <div class="flex gap-1 mt-4">
-              <span
-                class="material-symbols-outlined text-primary text-sm"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >star</span
-              >
-              <span
-                class="material-symbols-outlined text-primary text-sm"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >star</span
-              >
-              <span
-                class="material-symbols-outlined text-primary text-sm"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >star</span
-              >
-              <span
-                class="material-symbols-outlined text-primary text-sm"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >star</span
-              >
-              <span
-                class="material-symbols-outlined text-primary text-sm"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >star</span
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Location & Map -->
-      <section class="py-section-padding border-t border-stone-100">
-        <div class="px-margin-safe max-w-[1440px] mx-auto">
-          <div class="flex flex-col md:flex-row gap-16 items-center">
-            <div class="flex-1">
-              <h2 class="font-headline-lg text-stone-900 mb-8">
-                In the Heart of the Quadrilatero
-              </h2>
-              <p class="font-body-lg text-stone-500 mb-12">
-                Nestled between the Egyptian Museum and the Royal Palace, our
-                appartment offers the most prestigious address in the city.
-                Experience the rhythmic pulse of Turin from a quiet,
-                cobblestoned sanctuary.
-              </p>
-              <div class="space-y-6">
-                <div class="flex items-start gap-4">
-                  <span class="material-symbols-outlined text-primary"
-                    >distance</span
-                  >
-                  <div>
-                    <h5 class="font-label-sm uppercase mb-1">
-                      Egyptian Museum
-                    </h5>
-                    <p class="text-stone-400 font-body-md italic">
-                      10-minute walk
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-4">
-                  <span class="material-symbols-outlined text-primary"
-                    >distance</span
-                  >
-                  <div>
-                    <h5 class="font-label-sm uppercase mb-1">
-                      Mole Antonelliana
-                    </h5>
-                    <p class="text-stone-400 font-body-md italic">
-                      12-minute walk
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex-1 w-full aspect-video md:aspect-[4/5] bg-stone-100 grayscale hover:grayscale-0 transition-all duration-700 relative group overflow-hidden"
-            >
-              <img
-                class="w-full h-full object-cover"
-                data-alt="A detailed, elegant map overlay showing the central Quadrilatero district of Turin. The map is styled with a minimalist editorial aesthetic, using a soft cream and light gray palette with thin gold lines marking the streets. The 'APPARTAMENTO TORINO CENTRO' location is marked by a sophisticated, small copper-colored icon. The lighting in the underlying texture suggests high-quality parchment."
-                data-location="Turin, Italy"
-                src="../assets/map.webp"
-              />
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div
-                  class="bg-white/90 backdrop-blur-md px-8 py-6 shadow-xl border border-stone-200 text-center"
-                >
-                  <span
-                    class="font-label-sm uppercase tracking-widest text-primary mb-2 block"
-                    >Our Location</span
-                  >
-                  <p class="font-headline-md text-stone-900">
-                    Via Paolo Sacchi, 36
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Instagram Gallery -->
-      <section class="py-section-padding px-margin-safe max-w-[1440px] mx-auto">
-        <div class="text-center mb-16">
-          <h2 class="font-headline-md text-stone-900 mb-4">
-            The Appartment Lens
-          </h2>
-          <p class="font-label-sm uppercase tracking-[0.2em] text-primary">
-            #TURINATELIERLUX
-          </p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div class="aspect-square overflow-hidden">
-            <img
-              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-              data-alt="A stylish living room featuring a large flat-screen TV mounted on the wall above a collection of books and magazines. To the right, there is a white decorative fireplace mantel with candles and a black armchair. The wall is adorned with a series of black and white animal portraits, and a plush grey rug covers the floor."
-              src="../assets/ig1.webp"
-            />
-          </div>
-          <div class="aspect-square overflow-hidden mt-8 md:mt-12">
-            <img
-              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-              data-alt="A modern bathroom with white marble wall tiles and a geometric patterned floor. It features a white floating vanity sink, a round mirror, and a classic wall sconce. Two tall windows with white privacy curtains let in soft light, and a gold decorative hand sculpture sits on the ledge."
-              src="../assets/ig2.webp"
-            />
-          </div>
-          <div class="aspect-square overflow-hidden">
-            <img
-              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-              data-alt="A close-up side view of a vintage wooden chest of drawers with an elegant polished finish and ornate dark metal handles. In the blurred background, a large black and white framed photograph of a narrow European street leans against a white wall on a light wood floor."
-              src="../assets/ig3.webp"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer
-      class="w-full px-16 py-24 flex flex-col items-center gap-12 text-center bg-stone-50 border-t border-stone-200 mt-32"
-    >
-      <div class="text-xl font-serif tracking-widest text-stone-900">
-        APPARTAMENTO TORINO CENTRO
       </div>
-      <p class="font-serif text-stone-600 max-w-md">
-        © 2026 APPARTAMENTO TORINO CENTRO Lux B&amp;B. Designed for the
-        discerning traveler.
-      </p>
+    </header>
+    <!-- END: MainHeader -->
+    <!-- BEGIN: HeroSection -->
+    <section class="relative h-[85vh] overflow-hidden">
+      <!-- Hero Image Background -->
+      <div
+        class="absolute inset-0 w-full h-full"
+        style="
+          background:
+            linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+            url(&quot;../assets/app_hero.webp&quot;);
+          background-size: cover;
+          background-position: center;
+        "
+      ></div>
+      <!-- Hero Content -->
+      <div class="relative container mx-auto h-full flex items-center px-6">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-5xl md:text-6xl font-serif mb-4 leading-tight">
+            EXPERIENCE TURIN,<br/>FEEL AT HOME.
+          </h1>
+          <div class="flex items-center space-x-2">
+            <div class="w-10 h-[1px] bg-gold-light"></div>
+            <img
+              alt="Decorative Line"
+              class="w-6 h-6 text-gold-light"
+              src="../assets/logo.svg"
+            />
+            <div class="w-10 h-[1px] bg-gold-light"></div>
+          </div>
+          <p class="text-lg md:text-xl font-light italic mb-8 opacity-90">
+            An elegant and romantic refuge in the heart of the city.
+          </p>
+          <a href="#features">
+            <button
+              class="px-8 py-3 border border-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-luxury-charcoal transition-all duration-300"
+            >
+              Discover More
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- UI Overlays removed per request -->
+    </section>
+    <!-- END: HeroSection -->
+
+    <!-- BEGIN: FeaturesSection -->
+    <section class="py-24 px-6 dark:bg-surface-elevated">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <!-- Feature 1 -->
+        <div class="text-center group">
+          <div class="mb-6 flex justify-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center transition duration-500"
+            >
+              <img 
+                alt="Icona Posizione"
+                class="w-32 h-32 text-gold-light"
+                src="../assets/home.svg">
+            </div>
+          </div>
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4 dark:text-champagne">
+            Central Location
+          </h3>
+          <p
+            class="text-[11px] text-gray-500 leading-relaxed uppercase tracking-wider"
+          >
+            Just a few steps from Torino's wonders.
+          </p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="text-center group">
+          <div class="mb-6 flex justify-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center transition duration-500"
+            >
+              <img 
+                alt="Icona Design"
+                class="w-32 h-32 text-gold-light"
+                src="../assets/bed.svg">
+            </div>
+          </div>
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4 dark:text-champagne">
+            Design and Comfort
+          </h3>
+          <p
+            class="text-[11px] text-gray-500 leading-relaxed uppercase tracking-wider"
+          >
+            Refined environments, meticulously designed.
+          </p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="text-center group">
+          <div class="mb-6 flex justify-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center transition duration-500"
+            >
+              <img 
+                alt="Icona Coppie"
+                class="w-32 h-32 text-gold-light"
+                src="../assets/hearts.svg">
+            </div>
+          </div>
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4 dark:text-champagne">
+            For Couples
+          </h3>
+          <p
+            class="text-[11px] text-gray-500 leading-relaxed uppercase tracking-wider"
+          >
+            The perfect atmosphere for special moments.
+          </p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="text-center group">
+          <div class="mb-6 flex justify-center">
+            <div
+              class="w-16 h-16 flex items-center justify-center transition duration-500"
+            >
+              <img 
+                alt="Icona Ospitalità"
+                class="w-32 h-32 text-gold-light"
+                src="../assets/cloche.svg">
+            </div>
+          </div>
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4 dark:text-champagne">
+            Italian Hospitality
+          </h3>
+          <p
+            class="text-[11px] text-gray-500 leading-relaxed uppercase tracking-wider"
+          >
+            Warm welcome and dedicated services.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END: FeaturesSection -->
+    <!-- BEGIN: WelcomeSection -->
+    <section class="py-0 overflow-hidden" id="features">
+      <div class="flex flex-col md:flex-row">
+        <!-- Text Side -->
+        <div
+          class="flex-1 bg-luxury-beige dark:bg-luxury-charcoal p-12 md:p-24 flex flex-col justify-center"
+        >
+          <span
+            class="text-[10px] tracking-[0.4em] uppercase text-gold-light mb-4"
+            >Welcome</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-serif text-luxury-charcoal mb-6 leading-tight uppercase dark:text-champagne"
+          >
+            Elegance, History<br />and Authenticity
+          </h2>
+          <div class="flex items-center mb-8 space-x-2">
+            <div class="w-10 h-[1px] bg-gold-light"></div>
+            <img
+              alt="Decorative Line"
+              class="w-6 h-6 text-gold-light"
+              src="../assets/logo.svg"
+            />
+            <div class="w-10 h-[1px] bg-gold-light"></div>
+          </div>
+          <div class="space-y-4 text-sm text-gray-600 leading-relaxed max-w-md dark:text-on-surface-variant">
+            <p>
+              In the heart of Turin, an exclusive apartment where the charm of history meets modern comfort.
+            </p>
+            <p>
+              Every detail is thought out to make your stay unforgettable.
+            </p>
+          </div>
+          <div class="mt-12">
+            <a 
+              href="../assets/guida.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                  class="px-6 py-2 border border-gold-light text-[10px] tracking-widest uppercase bg-gold-light text-white transition duration-300"
+                >
+                  What to Visit?
+              </button>
+            </a>
+            <a
+              href="https://wa.me/393356110429?text=Good%20morning%2C%20I%27m%20interested%20in%20booking%20a%20stay%20and%20would%20like%20to%20receive%20more%20information."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                class="px-6 py-2 border border-gold-light text-[10px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition duration-300 dark:text-gold-light dark:hover:text-luxury-charcoal"
+              >
+                Book Now
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- Image Side -->
+        <div class="flex-1 min-h-[500px]">
+          <img
+            alt="Decorative Iron Gate Detail"
+            class="w-full h-full object-cover"
+            src="../assets/turin_vertical.webp"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- END: WelcomeSection -->
+
+    <!-- BEGIN: ServicesSection -->
+    <section class="py-24 px-6 dark:bg-surface-elevated">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <span
+            class="text-[10px] tracking-[0.4em] uppercase text-gold-light mb-4 block"
+            >Comfort &amp; Services</span
+          >
+          <h2
+            class="text-3xl md:text-4xl font-serif text-luxury-charcoal uppercase tracking-wider dark:text-champagne"
+          >
+            Services and Optional
+          </h2>
+          <div class="flex justify-center mt-6">
+            <div class="w-12 h-[1px] bg-gold-light"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-y-16 gap-x-8">
+          <!-- Service 1 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Wi-Fi Alta Velocità"
+                class="w-10 h-10"
+                src="../assets/wifi.svg"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              High-Speed Wi-Fi
+            </p>
+          </div>
+          <!-- Service 2 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Aria Condizionata"
+                class="w-10 h-10"
+                src="../assets/air-conditioner.svg"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              Air Conditioning
+            </p>
+          </div>
+          <!-- Service 3 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Cucina Attrezzata"
+                class="w-10 h-10"
+                src="../assets/fork-and-knife.svg"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              Equipped Kitchen
+            </p>
+          </div>
+          <!-- Service 4 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Lavatrice"
+                class="w-10 h-10"
+                src="../assets/washing-machine.svg"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              Washing Machine
+            </p>
+          </div>
+          <!-- Service 5 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Smart TV"
+                class="w-10 h-10"
+                src="../assets/tv.svg"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              TV
+            </p>
+          </div>
+          <!-- Service 6 -->
+          <div class="flex flex-col items-center text-center">
+            <div class="mb-4">
+              <img
+                alt="Asciugacapelli"
+                class="w-10 h-10"
+                src="../assets/hair-dryer.svg"
+              />
+            </div>
+            <p
+              class="text-[10px] tracking-[0.2em] font-medium uppercase text-gray-700"
+            >
+              Hair Dryer
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END: ServicesSection -->
+
+    <!-- BEGIN: Footer -->
+    <footer class="bg-luxury-beige pt-20 pb-8 px-6 border-t border-gray-100 dark:bg-luxury-charcoal dark:border-white/5">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+          <!-- Column 1: Branding -->
+          <div class="flex flex-col items-center md:items-start">
+            <div
+              class="flex items-center space-x-3 mb-6"
+              data-purpose="footer-logo"
+            >
+              <div class="w-12 h-12 flex items-center justify-center">
+                <img
+                  alt="Logo"
+                  class="w-8 h-8 text-gold-light font-serif italic"
+                  src="../assets/logo.svg"
+                />
+              </div>
+              <div class="leading-none">
+                <p class="text-sm tracking-[0.3em] font-medium uppercase dark:text-champagne">
+                  Appartamento
+                </p>
+                <div class="flex items-center space-x-2">
+                  <div class="w-1/2 h-[1px] bg-gold-light"></div>
+                  <img
+                    alt="Decorative Line"
+                    class="w-4 h-4 text-gold-light"
+                    src="../assets/logo.svg"
+                  />
+                  <div class="w-1/2 h-[1px] bg-gold-light"></div>
+                </div>
+                <p class="text-xs tracking-[0.3em] text-gray-400 uppercase text-center">
+                  Torino Centro
+                </p>
+              </div>
+            </div>
+            <!-- Socials -->
+            <div class="flex space-x-4 mt-4">
+              <a
+                class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:border-gold-light hover:text-gold-light transition"
+                href="https://www.instagram.com/appartamento.torino.centro/"
+                >
+                <img
+                  alt="Instagram"
+                  class="w-6 h-6"
+                  src="../assets/instagram.svg"/>
+                </a>
+              <a
+                class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:border-gold-light hover:text-gold-light transition"
+                href="https://www.facebook.com/people/Appartamento-Torino-Centro/61589931309081/"
+                >
+                <img
+                  alt="Facebook"
+                  class="w-4 h-4"
+                  src="../assets/facebook.svg"/>
+                </a
+              >
+              <a
+                class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:border-gold-light hover:text-gold-light transition"
+                href="https://www.tiktok.com/@appartament.torino.centr"
+                >
+                  <img
+                    alt="Tik Tok"
+                    class="w-4 h-4"
+                    src="../assets/tiktok.svg"/>
+                </a
+              >
+            </div>
+          </div>
+          <!-- Column 2: Contact & Address (Menu Links cleaned up per request) -->
+          <div class="text-center md:text-left">
+            <h4 class="text-[12px] tracking-[0.4em] uppercase font-bold mb-8 dark:text-champagne">
+              Contacts
+            </h4>
+            <ul
+              class="space-y-4 text-[12px] tracking-widest uppercase text-gray-500 dark:text-on-surface-variant"
+            >
+              <li class="flex items-center justify-center md:justify-start">
+                <span class="mr-2">📞</span> +39 3356110429
+              </li>
+              <li class="flex items-center justify-center md:justify-start">
+                <span class="mr-2">✉️</span> info@appartamentotorinocentro.it
+              </li>
+              <li class="flex items-center justify-center md:justify-start">
+                <span class="mr-2">📍</span> Turin, Italy
+              </li>
+            </ul>
+            <div class="mt-8">
+              <a
+                href="https://wa.me/393356110429?text=Good%20morning%2C%20I%27m%20interested%20in%20booking%20a%20stay%20and%20would%20like%20to%20receive%20more%20information."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button
+                  class="px-6 py-2 border border-gold-light text-[9px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition dark:text-gold-light dark:hover:text-luxury-charcoal"
+                >
+                  Book Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright Bar -->
+        <div
+          class="border-t border-gray-200 pt-8 flex flex-col md:row justify-between items-center text-[10px] text-gray-400 tracking-widest uppercase"
+        >
+          <p>
+            © 2021-26 Appartamento Torino Centro - All rights reserved
+          </p>
+          <p>P. IVA: 115560400019</p>
+        </div>
+      </div>
     </footer>
+    <!-- END: Footer -->
   </body>
 </html>
