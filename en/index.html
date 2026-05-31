@@ -20,7 +20,12 @@
               "gold-light": "#c5a059",
               "gold-dark": "#a38146",
               "luxury-beige": "#f9f6f1",
-              "luxury-charcoal": "#2d2d2d",
+              "luxury-charcoal": "#121411",
+              "surface-container": "#1e201d",
+              "on-surface": "#e3e3de",
+              "on-surface-variant": "#d1c5b4",
+              "surface-elevated": "#1e1e1e",
+              "champagne": "#F5F5F0",
             },
             fontFamily: {
               serif: ["Playfair Display", "serif"],
@@ -70,7 +75,7 @@
   <body class="antialiased">
     <!-- BEGIN: MainHeader -->
     <header
-      class="bg-white/95 sticky top-0 z-50 border-b border-gray-100 px-6 py-4"
+      class="bg-white/95 dark:bg-luxury-charcoal/95 sticky top-0 z-50 border-b border-gray-100 px-6 py-4 dark:border-white/5"
     >
       <div class="w-full flex justify-between items-center">
         <!-- Logo -->
@@ -84,7 +89,7 @@
           </div>
           <div class="leading-none">
             <p
-              class="text-xs tracking-[0.3em] font-medium uppercase text-center"
+              class="text-xs tracking-[0.3em] font-medium uppercase text-center dark:text-white"
             >
               Appartamento
             </p>
@@ -104,7 +109,7 @@
             </p>
           </div>
         </div>
-        <!-- Navigation - Links Removed per request -->
+        <!-- Navigation -->
         <nav class="hidden lg:flex items-center space-x-8"></nav>
         <!-- CTA -->
         <div>
@@ -114,7 +119,7 @@
             rel="noopener noreferrer"
           >
             <button
-              class="px-6 py-2 border border-gold-light text-[10px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition duration-300"
+              class="px-6 py-2 border border-gold-light text-[10px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition duration-300 dark:text-gold-light dark:hover:text-luxury-charcoal"
             >
               Book Now
             </button>
@@ -168,7 +173,7 @@
     <!-- END: HeroSection -->
 
     <!-- BEGIN: FeaturesSection -->
-    <section class="py-24 px-6">
+    <section class="py-24 px-6 dark:bg-surface-elevated">
       <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <!-- Feature 1 -->
         <div class="text-center group">
@@ -182,7 +187,7 @@
                 src="../assets/home.svg">
             </div>
           </div>
-          <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4 dark:text-champagne">
             Central Location
           </h3>
           <p
@@ -203,7 +208,7 @@
                 src="../assets/bed.svg">
             </div>
           </div>
-          <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4 dark:text-champagne">
             Design and Comfort
           </h3>
           <p
@@ -224,7 +229,7 @@
                 src="../assets/hearts.svg">
             </div>
           </div>
-          <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4 dark:text-champagne">
             For Couples
           </h3>
           <p
@@ -245,7 +250,7 @@
                 src="../assets/cloche.svg">
             </div>
           </div>
-          <h3 class="font-serif text-sm tracking-widest uppercase mb-4">
+          <h3 class="font-serif text-sm tracking-widest uppercase mb-4 dark:text-champagne">
             Italian Hospitality
           </h3>
           <p
@@ -262,14 +267,14 @@
       <div class="flex flex-col md:flex-row">
         <!-- Text Side -->
         <div
-          class="flex-1 bg-luxury-beige p-12 md:p-24 flex flex-col justify-center"
+          class="flex-1 bg-luxury-beige dark:bg-luxury-charcoal p-12 md:p-24 flex flex-col justify-center"
         >
           <span
             class="text-[10px] tracking-[0.4em] uppercase text-gold-light mb-4"
             >Welcome</span
           >
           <h2
-            class="text-4xl md:text-5xl font-serif text-luxury-charcoal mb-6 leading-tight uppercase"
+            class="text-4xl md:text-5xl font-serif text-luxury-charcoal mb-6 leading-tight uppercase dark:text-champagne"
           >
             Elegance, History<br />and Authenticity
           </h2>
@@ -282,7 +287,7 @@
             />
             <div class="w-10 h-[1px] bg-gold-light"></div>
           </div>
-          <div class="space-y-4 text-sm text-gray-600 leading-relaxed max-w-md">
+          <div class="space-y-4 text-sm text-gray-600 leading-relaxed max-w-md dark:text-on-surface-variant">
             <p>
               In the heart of Turin, an exclusive apartment where the charm of history meets modern comfort.
             </p>
@@ -308,7 +313,7 @@
               rel="noopener noreferrer"
             >
               <button
-                class="px-6 py-2 border border-gold-light text-[10px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition duration-300"
+                class="px-6 py-2 border border-gold-light text-[10px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition duration-300 dark:text-gold-light dark:hover:text-luxury-charcoal"
               >
                 Book Now
               </button>
@@ -328,7 +333,7 @@
     <!-- END: WelcomeSection -->
 
     <!-- BEGIN: ServicesSection -->
-    <section class="py-24 px-6">
+    <section class="py-24 px-6 dark:bg-surface-elevated">
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-16">
           <span
@@ -336,7 +341,7 @@
             >Comfort &amp; Services</span
           >
           <h2
-            class="text-3xl md:text-4xl font-serif text-luxury-charcoal uppercase tracking-wider"
+            class="text-3xl md:text-4xl font-serif text-luxury-charcoal uppercase tracking-wider dark:text-champagne"
           >
             Services and Optional
           </h2>
@@ -351,7 +356,7 @@
               <img
                 alt="Wi-Fi Alta Velocità"
                 class="w-10 h-10"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_34ieCYqagfLnR9Xv6uNZZOPZ9gVUZVV0OOFbu04yZP75bv0_0_1QnmV6RQkMB566iPssSeiDF2Kbc84xH6kJ3CFLazJ-wxI_6UX1JjFsiwrAseTOt0Q_pW8Ee1ouRM1qWpBEB5rlf_PIGn7bqIjj1veLmDqwi8734cEMeLpFqFj_aXG7AN1X3q-b_od-a47nrXr55eQZCP6YKA1oULVOqbGs2GkxbVIBCMl48QoewcHq76lcw48g2Un-MPoWYdkL1cy5wYiHoL4"
+                src="../assets/wifi.svg"
               />
             </div>
             <p
@@ -366,7 +371,7 @@
               <img
                 alt="Aria Condizionata"
                 class="w-10 h-10"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0UUY5ypRmrhpjNS98hNKIPmHf0uyrR55LSRRvk2NlWDBWiWvcMFlhs8RkNJGq_6o7fwBXuVKBzqVuOHSb0ZcCidOsuBpaE89wYs2sTktZFDvytrFmHKbNTT8rjb7T0l4JneN0mEFr2PrB_RkA-pFRAScoXsGskwqMxE5Cj3D9YniHf1cf82pBYma72L4sJTHJ_282t2xspJR0yMSusXCo7064KDG3ytHWU28aYLA12PXxGUT-4Qpt-j_cl1Jm0ns7O9OlN9_0_rs"
+                src="../assets/air-conditioner.svg"
               />
             </div>
             <p
@@ -381,7 +386,7 @@
               <img
                 alt="Cucina Attrezzata"
                 class="w-10 h-10"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJHhd7KoRvUujYXB_1R9wl7QMeQFSKJewGVUEchNTk5V0BiUHAbHlKcK41-GhhMgU7D5WSXwWpMPqMqC6CKbskxKugLH8R76HJe5q0OKG2eDFsYRxwv7D--eVUhdpqk0eulC_02JOdBzr1DGcZCWL99NHmMBO-NLyv1pZSJ4wDWnDsFCQ61PqSwW3WviYGUqbFjGLXh7vIUlJRfshnfMZNdz4iUnijClux8hG8gxAF7XkUU3zOjecC5eNhaVfJEDtggUblJ684Eaw"
+                src="../assets/fork-and-knife.svg"
               />
             </div>
             <p
@@ -396,7 +401,7 @@
               <img
                 alt="Lavatrice"
                 class="w-10 h-10"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_Lgc6GOft65rKHfHe2vpZ9TE4WMaZWLZEvziiqO9YzULNnCatWVMuxA0JDL4l2lVPXaPZZyly0dKRkeFsWIJIGEUZSjqM3CpMtt5Yy1l8JAK8_Mx_aznuvaVVrwxVgw6p5w9QInZENVfGkcnsSPDaBtPhZXZO6KK43oL4V3FuRH3bVjbrlbO5fdzjta6AQXh7wBxT2DE9LD3iZynhlbQYJiX0T8yyhQbhslhnQxNLkY5YvOncAc3O45-E3HtFeHVKWtE1ii-NrvM"
+                src="../assets/washing-machine.svg"
               />
             </div>
             <p
@@ -411,7 +416,7 @@
               <img
                 alt="Smart TV"
                 class="w-10 h-10"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmrqcJ2GvbIa5KbiDcdlv1xTWBIf0HMcj0RfojBXeNx8q0ytppGWqp0ysJVXd8__mmAstJ3bVmtXEdFaM3WWVzvKls5pROdBjToN5BmhI6mmf5YlZNY0aJitSNZUMk7VthHgd-OgZ6ZHpnA5F7PglH35oyOuoO1-9XlnncpXeUVn8V1Eh8PVWsu19wwVcdzCBaBirGDBKQn-vFwQVUOmtUJGltZNIxW-AXQhtZ7rY-BK9KTFKEw964O2OMweVwGuBxtAeGsp2nTUM"
+                src="../assets/tv.svg"
               />
             </div>
             <p
@@ -426,7 +431,7 @@
               <img
                 alt="Asciugacapelli"
                 class="w-10 h-10"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAob00K8Qw36SCm3QPKVz-REj8b53eUSt9t0jZQC4fJsTc-BKcFMOT0KTm_oI8vAYPFrAUPEnPlW8LFHVluVUJGrpBtwtVZCOWHElh0iClkoJtOi9Xw6fyyB6iboGydLH5TYfQsoBUyWDl_JQ6GJyGaRvdcBemfSk4b5QKJ-h7Q-_SboV_YSTv_CxfRqslenMnF-vpwzWmHjVZj3Up-TQPrPAyV2bFyoPVLOlMBWccoWqpYWYOyThreta1CNSP4R6E4P8HkTmkJX1I"
+                src="../assets/hair-dryer.svg"
               />
             </div>
             <p
@@ -441,7 +446,7 @@
     <!-- END: ServicesSection -->
 
     <!-- BEGIN: Footer -->
-    <footer class="bg-luxury-beige pt-20 pb-8 px-6 border-t border-gray-100">
+    <footer class="bg-luxury-beige pt-20 pb-8 px-6 border-t border-gray-100 dark:bg-luxury-charcoal dark:border-white/5">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
           <!-- Column 1: Branding -->
@@ -458,7 +463,7 @@
                 />
               </div>
               <div class="leading-none">
-                <p class="text-sm tracking-[0.3em] font-medium uppercase">
+                <p class="text-sm tracking-[0.3em] font-medium uppercase dark:text-champagne">
                   Appartamento
                 </p>
                 <div class="flex items-center space-x-2">
@@ -510,11 +515,11 @@
           </div>
           <!-- Column 2: Contact & Address (Menu Links cleaned up per request) -->
           <div class="text-center md:text-left">
-            <h4 class="text-[12px] tracking-[0.4em] uppercase font-bold mb-8">
+            <h4 class="text-[12px] tracking-[0.4em] uppercase font-bold mb-8 dark:text-champagne">
               Contacts
             </h4>
             <ul
-              class="space-y-4 text-[12px] tracking-widest uppercase text-gray-500"
+              class="space-y-4 text-[12px] tracking-widest uppercase text-gray-500 dark:text-on-surface-variant"
             >
               <li class="flex items-center justify-center md:justify-start">
                 <span class="mr-2">📞</span> +39 3356110429
@@ -533,7 +538,7 @@
                 rel="noopener noreferrer"
               >
                 <button
-                  class="px-6 py-2 border border-gold-light text-[9px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition"
+                  class="px-6 py-2 border border-gold-light text-[9px] tracking-widest uppercase hover:bg-gold-light hover:text-white transition dark:text-gold-light dark:hover:text-luxury-charcoal"
                 >
                   Book Now
                 </button>
