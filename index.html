@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <title>Redirecting...</title>
-    
+    <meta 
+    name="keywords" 
+    content="appartamento Torino centro, appartamento vacanze Torino, luxury apartment Turin, holiday apartment Turin"
+    >
+
+    <link rel="icon" type="image/png" href="./assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+
+    <link rel="sitemap" type="application/xml" href="./sitemap.xml">
+
     <link rel="alternate" hreflang="it" href="https://appartamentotorinocentro.it/it/">
     <link rel="alternate" hreflang="en" href="https://appartamentotorinocentro.it/en/">
     <link rel="alternate" hreflang="x-default" href="https://appartamentotorinocentro.it/">
 
     <script>
-        (function() {
+        (function () {
             const savedLang = localStorage.getItem('i18nextLng');
-            
+
             const browserLang = navigator.language || navigator.userLanguage;
             const lang = (savedLang || browserLang).substring(0, 2);
 
@@ -23,9 +36,11 @@
         })();
     </script>
 </head>
+
 <body>
-    <p>Se non vieni reindirizzato, seleziona la lingua: 
+    <p>Se non vieni reindirizzato, seleziona la lingua:
         <a href="/it/">Italiano</a> o <a href="/en/">English</a>.
     </p>
 </body>
+
 </html>
