@@ -1,0 +1,42 @@
+/*
+  DESIGN TOKENS — lusso charcoal / beige / champagne
+  Allineati al sito di riferimento (Appartamento Torino Centro).
+*/
+
+:root {
+  --charcoal: #121411;
+  --charcoal-soft: #1e201d;
+  --navy-950: #121411;
+  --navy-900: #1e201d;
+  --navy-800: #2a2c28;
+  --navy-700: #3a3d38;
+  --ivory: #f9f6f1;
+  --ivory-soft: #f3eee6;
+  --stone: #8a8378;
+  --ink: #121411;
+  --gold: #c5a059;
+  --gold-soft: #d4b57a;
+  --gold-line: rgba(197, 160, 89, 0.4);
+  --logo-muted: #b7b0a4;
+  --champagne: #f5f5f0;
+  --white: #ffffff;
+  --danger: #9b3d3d;
+
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: Montserrat, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+
+  --max-width: 1180px;
+  --pad-x: clamp(20px, 5vw, 64px);
+  --header-h: 84px;
+  --radius: 2px;
+  --shadow: 0 18px 40px rgba(18, 20, 17, 0.1);
+  --ease: 500ms ease;
+}

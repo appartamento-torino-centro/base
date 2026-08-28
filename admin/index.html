@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Admin — Appartamento Torino Centro</title>
+    <link rel="icon" type="image/png" href="../assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="admin admin-view-login">
+    <!-- Login e pannello sono due schermate esclusive: mai insieme. -->
+    <section class="admin-login" id="admin-login">
+      <div class="admin-card admin-card--login">
+        <img class="admin-login__mark" src="../assets/logo/Logo.svg" alt="" />
+        <p class="kicker">Area riservata</p>
+        <h1>Accedi</h1>
+        <div class="logo-divider" aria-hidden="true">
+          <span></span>
+          <img src="../assets/logo/Logo.svg" alt="" />
+          <span></span>
+        </div>
+        <form id="form-login">
+          <label for="utente">Utente</label>
+          <input id="utente" name="utente" type="text" autocomplete="username" required />
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required />
+          <button class="btn btn--gold" type="submit">Entra</button>
+        </form>
+        <p class="admin-msg" id="admin-msg-login"></p>
+      </div>
+    </section>
+
+    <div class="admin-shell" id="admin-panel" hidden>
+      <aside class="admin-nav">
+        <p class="kicker">Pannello</p>
+        <p class="admin-nav__brand">Appartamento<br />Torino Centro</p>
+        <nav>
+          <button type="button" class="is-on" data-tab="sito">Sito</button>
+          <button type="button" data-tab="apt">Appartamenti</button>
+          <button type="button" data-tab="book">Prenotazioni</button>
+        </nav>
+      </aside>
+      <div class="admin-main">
+        <header class="admin-top">
+          <h1 id="admin-titolo">Sito</h1>
+          <div class="admin-actions">
+            <button class="btn btn--gold" type="button" id="btn-salva">Salva anteprima</button>
+            <button class="btn btn--outline" type="button" id="btn-file-sito">Scarica i file</button>
+            <button class="btn btn--outline" type="button" id="btn-export">JSON</button>
+            <button class="btn btn--outline" type="button" id="btn-esci">Esci</button>
+          </div>
+        </header>
+        <p class="admin-msg" id="admin-msg"></p>
+
+        <section class="admin-card" data-panel="sito">
+          <p class="admin-hint">Dati pubblici: telefono, indirizzo, social. Salva anteprima per vederli sul sito in questo browser.</p>
+          <form id="form-config" class="admin-form">
+            <div>
+              <label for="cfg-whatsapp">WhatsApp (solo cifre)</label>
+              <input id="cfg-whatsapp" type="text" />
+            </div>
+            <div>
+              <label for="cfg-email">Email</label>
+              <input id="cfg-email" type="email" />
+            </div>
+            <div>
+              <label for="cfg-telefono">Telefono visibile</label>
+              <input id="cfg-telefono" type="text" />
+            </div>
+            <div>
+              <label for="cfg-piva">Partita IVA</label>
+              <input id="cfg-piva" type="text" />
+            </div>
+            <div class="admin-form__full">
+              <label for="cfg-indirizzo">Indirizzo</label>
+              <input id="cfg-indirizzo" type="text" />
+            </div>
+            <div>
+              <label for="cfg-instagram">Instagram</label>
+              <input id="cfg-instagram" type="url" />
+            </div>
+            <div>
+              <label for="cfg-facebook">Facebook</label>
+              <input id="cfg-facebook" type="url" />
+            </div>
+            <div class="admin-form__full">
+              <label for="cfg-tiktok">TikTok</label>
+              <input id="cfg-tiktok" type="url" />
+            </div>
+          </form>
+        </section>
+
+        <section class="admin-card" data-panel="apt" hidden>
+          <p class="admin-hint">iCal Booking/Airbnb e stato di ogni casa.</p>
+          <div id="lista-admin-apt"></div>
+        </section>
+
+        <section class="admin-card" data-panel="book" hidden>
+          <p class="admin-hint">Richieste arrivate dal sito (questo browser).</p>
+          <div id="lista-prenotazioni"></div>
+        </section>
+      </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/appartamenti-data.js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

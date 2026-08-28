@@ -1,0 +1,226 @@
+/*
+  ============================================
+  STILI DI BASE
+  ============================================
+  
+*/
+
+/* --- Reset minimo: toglie i margini di default del browser --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* --- Link “salta al contenuto”: visibile solo da tastiera --- */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  z-index: 1000;
+  background: var(--gold);
+  color: var(--navy-950);
+  padding: 8px 14px;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* --- Focus visibile (accessibilità) --- */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* --- Contenitore centrale --- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--pad-x);
+  padding-right: var(--pad-x);
+}
+
+/* --- Titoli --- */
+.kicker {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-2);
+  font-weight: 500;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: var(--stone);
+  max-width: 38em;
+}
+
+/*
+  Divisore con il marchio
+*/
+.logo-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: var(--space-3) 0;
+}
+
+.logo-divider span {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* Misura fissa: non deve mai diventare grande come una foto */
+.logo-divider img {
+  width: 18px;
+  height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+  flex-shrink: 0;
+  display: block;
+  object-fit: contain;
+}
+
+/* Se il divisore sta in un blocco centrato (cta, catalogo…) */
+.logo-divider--center {
+  justify-content: center;
+}
+
+/* --- Sezioni --- */
+.section {
+  padding: var(--space-7) 0;
+}
+
+.section--dark {
+  background: var(--navy-900);
+  color: var(--ivory);
+}
+
+.section--dark .lead {
+  color: rgba(247, 243, 236, 0.72);
+}
+
+.section--soft {
+  background: var(--ivory-soft);
+}
+
+.section__intro {
+  max-width: 640px;
+  margin-bottom: var(--space-5);
+}
+
+/* --- Testo secondario --- */
+.muted {
+  color: var(--stone);
+}
+
+/* --- Animazione di comparsa --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity var(--ease), transform var(--ease);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  main {
+    opacity: 1;
+    transform: none;
+    animation: none;
+    transition: none;
+  }
+}
+
+/* Spazio sotto l’header + ingresso pagina morbido */
+main {
+  padding-top: var(--header-h);
+  animation: page-in 700ms ease both;
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.noscript {
+  margin: var(--space-4) auto;
+  max-width: var(--max-width);
+  padding: var(--space-3) var(--pad-x);
+  background: var(--ivory-soft);
+  border-left: 3px solid var(--gold);
+}
